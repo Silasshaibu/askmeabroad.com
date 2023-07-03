@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Askmeabroad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heroSection">
+        <div>
+            <h6>PRICING</h6>
+            <h1>Make Your <span class="accent">Journey </span>To  <span class="accent">Study Abroad</span> A <span class="accent">Premium</span> And <span class="accent">Hassle-Free</span> Ride!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, doloremque dolorem nobis amet cum optio quis!</p>
+            <button class="primary">ASK AN EXPERT</button>
+        </div>
+        <div class="heroRightReveal">
+            <img src="./Assets/Images/HomePage-Hero.png" alt="studentHoldingABook"/>
+        </div>
+    </div>
+
+    <div class="default-section first">
+        <h3>
+            The Premium Reach        
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus nemo et dicta facere, consequatur est illo sequi adipisci commodi quia aperiam nobis omnis voluptatum exercitationem. Aut sequi ea pariatur.
+        </p>
+    </div>
+
+
+    <div class="universityPremium">
+        <div><img src="./Assets/Images/" alt="Monarch University"></div>
+        <div><img src="./Assets/Images/" alt="Stony Brook University"></div>
+        <div><img src="./Assets/Images/" alt="UCSan Diego"></div>
+        <div><img src="./Assets/Images/" alt="UFlorida"></div>
+        <div><img src="./Assets/Images/" alt="Maryland University"></div>
+        <div><img src="./Assets/Images/" alt="Washington University"></div>
+    </div>
+
+    <div class="default-section first">
+        <h3>
+            Pick your Premium        
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus nemo et dicta facere, consequatur est illo sequi adipisci commodi quia aperiam nobis omnis voluptatum exercitationem. Aut sequi ea pariatur.
+        </p>
+    </div>
+
+    <div class="pricing">
+        <div class="def-PriceCard">
+            <h4>Basic</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum facere aliquam quaerat totam corrupti non illo?</p>
+            <span>$14,999</span>
+            <ul>What's included in Package
+                <li>Apply Upto 5 University</li>
+                <li>Apply Upto 5 University</li>
+                <li>Apply Upto 5 University</li>
+                <li>Apply Upto 5 University</li>
+            </ul>
+        </div>
+
+        <div class="def-PriceCard">
+            <h4>Essential</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum facere aliquam quaerat totam corrupti non illo?</p>
+            <span>$14,999</span>
+            <ul>What's included in Package
+                <li>Apply Upto 5 University</li>
+                <li>Apply Upto 5 University</li>
+                <li>Apply Upto 5 University</li>
+                <li>Apply Upto 5 University</li>
+            </ul>
+        </div>
+    </div>    
+</body>
+</html>
+
+<style>
+    .universityPremium{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+        height:300px;
+        place-items: center;
+    }
+
+    .universityPremium div div img{
+        overflow: hidden;
+        width:10px;
+    }
+
+    .universityPremium div{
+        border:1px solid black;
+        min-width:80%;        
+        margin:0 auto;
+        height:100px;
+    }
+
+    .pricing{
+        padding:0px 10%;
+        padding-bottom:20%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .def-PriceCard{
+        padding:20px;
+        flex-basis:44%;
+        border:1px solid black;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    /*MOBILE*/
+    @media (max-width:550px){
+        .pricing{
+        padding:20px 20px;
+        display: flex;
+        flex-direction: column;       
+        justify-content: stretch;
+        padding-bottom:20%;
+        }
+
+        .def-PriceCard{
+        margin:10px 0px;
+        }
+
+        .universityPremium{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        place-items: center;
+        height:fit-content;
+        }
+
+        .universityPremium div{
+            border:1px solid black;
+            min-width:80%;       
+            margin:10px auto;
+        }
+    }
+
+</style>
