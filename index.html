@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Askmeabroad</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -164,9 +165,127 @@
             </div>
         </div>
     </footer>
+
+    <section class="ActionBodyBottom">
+        <div class="whatsappContainer-All">
+            <div class="whatsapp">
+            </div>
+
+            <div class="whatsappchatBoxPopUp">
+                <div></div>
+            </div>
+        </div>
+        <div class="robotContainer-All">
+            <div class="robotCallout">We are Online! <br> How may I help you today?</div>
+            <div class="robotChat"></div>
+        </div>
+    </section>
 </body>
 </html>
 
 <style>
- 
+    .whatsappchatNavMenu{
+        background-color: green;
+    }
+    :root{
+        --radisuWhatsappHolder:75px;
+    }
+
+    .whatsappContainer-All{
+        position: relative;
+    }
+
+    .whatsappchatBoxPopUp{      
+        display: grid; 
+        grid-template-rows: 1fr 1fr 1fr;
+        position: absolute;
+        bottom:0;
+        min-height:300px;
+        background-color: #ff000056;
+        border-radius:40px;
+        width:300px;
+    }
+
+    .whatsappchatBoxPopUp::after{
+        content:'X';
+        position: absolute;
+        right:15px;
+        top:15px;
+        background-color: white;
+        width:50px;
+        margin:0 auto;
+        border-radius:50%;
+        height:50px;
+
+
+    }
+
+    .robotChat, .whatsapp{
+        background-color: purple;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(./Assets/Images/askmeabroad-whatsapp-58x58.png);
+    }
+
+    .robotContainer-All{
+        display: flex;
+        position:relative;
+    }
+
+    .robotCallout{
+        padding:15px;
+        top:0;
+        left:-100%;
+        background-color: white;
+        border-radius: 5px;
+        margin-right:20px;
+        padding-right: 25px;
+        outline: .5px solid grey;
+        z-index: 1;
+        cursor: default;
+    }
+
+    .robotCallout::after{
+        content:'';
+        min-height:2ch;
+        min-width:2ch;
+        background-color: white;
+        border-radius: 3px;
+        transform: rotate(45deg) translate(30px, 10px);
+        top:0;
+        position: absolute;
+        border-right:1px solid grey;
+        border-top:1px solid grey;
+        border-radius: 0% 20% 0% 20%;
+        z-index:2;
+    }
+
+    .robotChat{
+        /* background-color: white; */
+        min-width: var(--radisuWhatsappHolder);
+        min-height: var(--radisuWhatsappHolder);
+        border-radius:100%; 
+        cursor:pointer;
+    }    
+
+    .whatsapp{
+        /* outline:2px solid white; */
+        border-radius: 50%;
+        /* width: var(--radisuWhatsappHolder); */
+        min-width: var(--radisuWhatsappHolder);
+        min-height: var(--radisuWhatsappHolder);
+        cursor: pointer;
+    }
+
+    .ActionBodyBottom{
+        position: fixed;
+        display: flex; 
+        justify-content: space-between;
+        bottom:5vw;
+        padding:10px 2%;
+        /* border:1px solid green; */
+        width:100vw;
+        min-height:50px;
+    }
 </style>
+
