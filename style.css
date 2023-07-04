@@ -11,14 +11,22 @@
 }
 
 body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
     box-sizing: border-box;
     font-family: product sans, sans-serif, helvetica, arial;
 }
 
-div{
-    padding:0% 4%;
+.section.headerNav{
+    padding:2% 10%;
     /* background-color: red; */
 }
+
+.heroSection{
+    padding-left:10%;
+}
+
 
 
 
@@ -133,8 +141,6 @@ button.primary:hover{
 .heroSection{
     padding-top:150px;
     position: relative;
-    padding-left:10px;
-    padding-right:30%; /*Changes based on the screen size too*/
     min-height:400px;
     height:fit-content;
     display:flex;
@@ -178,17 +184,17 @@ li a:active{
 }
 
 /*SECTIONS*/
-.default-section.first{
-    display: block;
-    text-align: center;
-    min-height: 50px;
-   }
-
    .default-section{
     display: flex;
     min-height:350px;
     height:fit-content;
-    padding:10% 20%;
+    padding:5% 10%;
+   }
+
+   .default-section.first{
+    display: block;
+    text-align: center;
+    min-height: 50px;
    }
 
    .default-section div:nth-child(even){
@@ -196,11 +202,7 @@ li a:active{
     }
    .default-section.first h3{
     padding-bottom:20px;
-   }
-
-   .default-section.second{   
-    padding:0%;
-   }
+   }   
 
    .default-section.second div{
     flex:1;
@@ -218,7 +220,7 @@ li a:active{
    
    /*FOOTER*/
    .foot-layer1{
-    padding:20px 0px;
+    padding:20px 10%;
     background-color: var(--global-color-primary);
     display: flex;
     flex-wrap: wrap;
@@ -260,8 +262,7 @@ li a:active{
 
     .foot-layer1 li{
         font-weight: 400;
-        cursor: pointer;
-       
+        cursor: pointer;       
     }
 
     footer, footer a{
@@ -325,6 +326,11 @@ li a:active{
         border-top:1px solid #efefef;
         padding-top:100px;
         padding-right:10%; 
+        padding-left:5%;
+    }
+
+    .default-section{
+        padding:5% 5%;
     }
 
     .foot-layer1 div{
@@ -340,11 +346,25 @@ li a:active{
         color:whitesmoke !important;
         padding-left:10px;       
     }
-}
 
+    .foot-layer1{
+        padding:20px 5%;
+    }
+}
 
 :root{
     --mobileHeaderHeroHeight:80vh;
+}
+
+/*TABLET SCREEN*/
+@media (max-width:800px){
+body{
+    background-color: rgba(255, 0, 0, 0.171);
+    }
+
+.section.headerNav{
+    padding: 2% 5%;
+    }
 }
 
 /*MOBILE SCREEN*/
@@ -377,6 +397,10 @@ li a:active{
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .section.headerNav{
+        padding:5%;
+    }
     
     header div:nth-child(1){
         order:1;
@@ -396,7 +420,7 @@ li a:active{
 
     .heroSection{
         display:block;
-        padding:0% 2%;
+        padding:0% 5%;
         padding-top:125px;
     }
 
@@ -432,8 +456,8 @@ li a:active{
     }
 
     .heroRightReveal img{
-    float:right;
-    transform: translate(25%, 0px);
+        float:right;
+        transform: translate(25%, 0px);
     }
     
     .mobileNav{
@@ -448,6 +472,8 @@ li a:active{
     .default-section{
         display: flex;
         flex-direction: column;
+        padding-left:5% !important;
+        padding-right:5% !important;
     } 
     
     .default-section.second{
@@ -459,6 +485,6 @@ li a:active{
    }  
 
    .foot-layer1 div{
-    flex-basis:100%;
+        flex-basis:100%;
     }
 }
