@@ -27,24 +27,19 @@ body{
     padding-left:10%;
 }
 
-
-
-
 /*HEADER*/
 header{
     display: flex;
     position:absolute;
     top:0;    
-    /* left:50%; */
     width:100%;
     padding:2% 0%;
-    /* transform:translateX(-50%) ; */
     justify-content: space-between;    
     z-index:2;
 }
 
 .heroSection h1{
-    width:100%;
+    width:80%;
 }
 
 .heroSection p{
@@ -189,6 +184,11 @@ li a:active{
     min-height:350px;
     height:fit-content;
     padding:5% 10%;
+   }
+
+   .default-section  p, .heroSection p{
+    padding-top:10px; /* added a bit of spacing to the top of every paragraph */
+    line-height: 1.5rem;
    }
 
    .default-section.first{
