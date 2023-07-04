@@ -1,0 +1,128 @@
+.whatsappchatNavMenu{
+        background-color: green;
+    }
+
+    .whatsappchatBoxPopUp div{
+        padding:30px;
+        margin:0;
+    }
+
+    .whatsappchatBoxPopUp div:nth-child(1){
+        background-color: purple;
+        border-radius:40px 40px 0px 0px;
+    }
+    
+    .whatsappchatBoxPopUp div:nth-child(3){
+        border-radius:0px 0px 40px 40px;
+        background-color: white;
+    }
+
+    :root{        
+        --radisuWhatsappHolder:75px;        
+        --closeBtnRadius:5px;
+    }
+
+    body{
+        margin:0;
+        padding:0;
+    }
+
+    .whatsappContainer-All{
+        position: relative;
+    }
+
+    .whatsappcloseBtn{
+        
+        background-color:white;
+        width: var(--closeBtnRadius);
+        height: var(--closeBtnRadius);
+        position: absolute;
+        align-items: center;
+        margin: 0 auto;
+        /* border:1px solid black; */
+        top:15px;
+        right:15px;
+        cursor:pointer;
+        border-radius: 50%;
+        transform:scale(.8) translateY(-5px);
+    }
+    .whatsappchatBoxPopUp{            
+        position: absolute;
+        display:grid;
+        display:none;
+        grid-template-rows: 1fr 2fr 1fr;
+        padding:0px;
+        bottom:0;
+        min-height:300px;
+        background-color: #ffffff;
+        border-radius:40px;
+        width:300px;
+    }
+
+    .robotChat, .whatsapp{
+        background-color: purple;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(./Assets/Images/askmeabroad-whatsapp-58x58.png);
+    }
+
+    .robotContainer-All{
+        display: flex;
+        position:relative;
+    }
+
+    .robotCallout{
+        padding:15px;
+        top:0;
+        left:-100%;
+        background-color: white;
+        border-radius: 5px;
+        margin-right:20px;
+        padding-right: 25px;
+        outline: .5px solid grey;
+        z-index: 1;
+        cursor: default;
+    }
+
+    .robotCallout::after{
+        content:'';
+        min-height:2ch;
+        min-width:2ch;
+        background-color: white;
+        border-radius: 3px;
+        transform: rotate(45deg) translate(30px, 10px);
+        top:0;
+        position: absolute;
+        border-right:1px solid grey;
+        border-top:1px solid grey;
+        border-radius: 0% 20% 0% 20%;
+        z-index:2;
+    }
+
+    .robotChat{
+        /* background-color: white; */
+        min-width: var(--radisuWhatsappHolder);
+        min-height: var(--radisuWhatsappHolder);
+        border-radius:100%; 
+        cursor:pointer;
+    }    
+
+    .whatsapp{
+        /* outline:2px solid white; */
+        border-radius: 50%;
+        /* width: var(--radisuWhatsappHolder); */
+        min-width: var(--radisuWhatsappHolder);
+        min-height: var(--radisuWhatsappHolder);
+        cursor: pointer;
+    }
+
+    .ActionBodyBottom{
+        position: fixed;
+        display: flex; 
+        justify-content: space-between;
+        bottom:5vw;
+        padding:10px 2%;
+        /* border:1px solid green; */
+        width:100vw;
+        min-height:50px;
+    }
