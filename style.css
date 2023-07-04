@@ -195,6 +195,7 @@ li a:active{
     display: block;
     text-align: center;
     min-height: 50px;
+    padding:10% 15%;
    }
 
    .default-section div:nth-child(even){
