@@ -20,4 +20,5 @@ whatsappCloseBtn.addEventListener('click', () => {
   mobileMenuDropDownNav.style.display ='block';
   console.log('ShowMobileMenuDropDown');
   body.style.transform = 'translateX(0%)';
+  console.log('bodyToTranslateX-axis__unit')
 });
