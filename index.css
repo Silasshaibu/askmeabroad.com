@@ -2,9 +2,21 @@
         background-color: green;
     }
 
+    .whatsappchatBoxPopUp{
+        outline:4px solid rgba(253, 227, 253, 0.164);
+        transition: outline 300ms;
+    }
+
+    .whatsappchatBoxPopUp:hover{
+        outline:4px solid rgba(196, 7, 196, 0.384);
+    }
+
+
     .whatsappchatBoxPopUp div{
         padding:30px;
         margin:0;
+        margin-bottom:-5px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
     .whatsappchatBoxPopUp div:nth-child(1){
@@ -19,7 +31,6 @@
     .callout{
         position: absolute;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
         min-height:30px;
         width:14ch;
         background-color: white;
@@ -73,9 +84,7 @@
         position: absolute;
         align-items: center;
         margin: 0 auto;
-        /* border:1px solid black; */
         top:15px;
-        
         right:15px;
         cursor:pointer;
         border-radius: 50%;
@@ -92,7 +101,6 @@
     
     .whatsappchatBoxPopUp{            
         position: absolute;
-        /* color:white; font color */
         display:grid;
         display:none;
         grid-template-rows:.5fr .5fr .5fr;
@@ -160,8 +168,7 @@
         z-index:2;
     }
 
-    .robotChat{
-        /* background-color: white; */
+    .robotChat{   
         min-width: var(--radisuWhatsappHolder);
         min-height: var(--radisuWhatsappHolder);
         border-radius:100%; 
@@ -169,9 +176,7 @@
     }    
 
     .whatsapp{
-        /* outline:2px solid white; */
         border-radius: 50%;
-        /* width: var(--radisuWhatsappHolder); */
         min-width: var(--radisuWhatsappHolder);
         min-height: var(--radisuWhatsappHolder);
         cursor: pointer;
@@ -183,7 +188,6 @@
         justify-content: space-between;
         bottom:5vw;
         padding:10px 2%;
-        /* border:1px solid green; */
         width:100vw;
         min-height:50px;
     }
