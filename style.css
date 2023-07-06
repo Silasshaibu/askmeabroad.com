@@ -220,6 +220,34 @@ li a:active{
     order:2;
    }  
    
+    .default-section.trainingConsultancy{
+    border:1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top:0;
+    padding-bottom:0;    
+    column-gap:1rem;
+    ;
+    }
+
+    .default-section.trainingConsultancy div{        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        padding: 1.5rem;
+        position: relative;
+        border-radius:1.2rem;
+        /* display:flex; */
+    }
+
+    .default-section.trainingConsultancy div:nth-child(odd){background-color: purple;
+        color:white;
+    }
+
+    .default-section.trainingConsultancy div button{
+        
+    }
+
+
+
    /*FOOTER*/
    .foot-layer1{
     padding:20px 10%;
@@ -375,6 +403,17 @@ body{
         background-color: var(--global-color-white);
         padding:0;
     }
+
+    .default-section.trainingConsultancy{
+        border:1px solid black;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top:0;
+        padding-bottom:0;    
+        column-gap:1rem;
+        ;
+        }
+
 
     .heroSection  div p{
         padding-right:8%;

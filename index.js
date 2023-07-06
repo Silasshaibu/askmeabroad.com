@@ -29,7 +29,6 @@ function changeBackgroundColor() {
   let colorDiv = document.getElementById("whatsappIcon");
   let colors = ["#25D366", "#8913C6"]; // Add more colors as you want
   let currentColor = colorDiv.style.backgroundColor;
-  // let currentOutlineColor = color.Div.style.backgroundOutline;
 
   // Find the index of the current color in the array
   let currentIndex = colors.indexOf(currentColor);
@@ -44,7 +43,6 @@ function changeBackgroundColor() {
 // Call the function initially
 changeBackgroundColor();
 
-// Set an interval to call the function every .5 minutes
-setInterval(changeBackgroundColor, .5 * 30 * 100);
-// setInterval(change)
+// Set an interval to call the function every .1 minutes
+setInterval(changeBackgroundColor, .1 * 30 * 1000);
 
