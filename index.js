@@ -46,3 +46,9 @@ changeBackgroundColor();
 // Set an interval to call the function every .1 minutes
 setInterval(changeBackgroundColor, .1 * 30 * 1000);
 
+
+
+//write an html css js If ul has li as a child, then add a span tag inside ul
+
+
+
