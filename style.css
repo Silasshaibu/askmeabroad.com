@@ -221,7 +221,7 @@ li a:active{
    }  
    
     .default-section.trainingConsultancy{
-    border:1px solid black;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top:0;
