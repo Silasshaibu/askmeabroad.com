@@ -22,3 +22,29 @@ whatsappCloseBtn.addEventListener('click', () => {
   body.style.transform = 'translateX(0%)';
   console.log('bodyToTranslateX-axis__unit')
 });
+
+
+//Change the color of the whatsapp Contact Icon
+function changeBackgroundColor() {
+  let colorDiv = document.getElementById("whatsappIcon");
+  let colors = ["#25D366", "#8913C6"]; // Add more colors as you want
+  let currentColor = colorDiv.style.backgroundColor;
+  // let currentOutlineColor = color.Div.style.backgroundOutline;
+
+  // Find the index of the current color in the array
+  let currentIndex = colors.indexOf(currentColor);
+
+  // Calculate the index of the next color
+  let nextIndex = (currentIndex + 1) % colors.length;
+
+  // Update the background color of the div
+  colorDiv.style.backgroundColor = colors[nextIndex];
+}
+
+// Call the function initially
+changeBackgroundColor();
+
+// Set an interval to call the function every .5 minutes
+setInterval(changeBackgroundColor, .5 * 30 * 100);
+// setInterval(change)
+

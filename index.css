@@ -47,7 +47,7 @@
         background-color: white;
         bottom: 0;
         left:0;
-        transform:translate(70%,-45%);
+        transform:translate(55%,-25%);
         padding:10px 20px;
         border-radius:25px;
         display:none;
@@ -75,7 +75,7 @@
     }
 
     :root{        
-        --radisuWhatsappHolder:75px;        
+        --radisuWhatsappHolder:60px;        
         --closeBtnRadius:20px;
     }
 
@@ -112,7 +112,6 @@
     
     .whatsappchatBoxPopUp{            
         position: absolute;
-        display:grid;
         display:none;
         grid-template-rows:.5fr .5fr .5fr;
         padding:0px;
@@ -141,15 +140,38 @@
         cursor:default;
     }
     
-    .robotChat, .whatsapp{
+    .robotChat{   
+        height: 25px;
+        background-image: url(./Assets/Images/askmeabroad-whatsapp-58x58.png);
+
+    }    
+
+    .robotChat, .whatsapp{             
+        border-radius: 50%;        
+        cursor: pointer;
+        min-width: var(--radisuWhatsappHolder);
+        min-height: var(--radisuWhatsappHolder);
         background-color: purple;
         background-position: center center;
-        background-repeat: no-repeat;
-        background-image: url(./Assets/Images/askmeabroad-whatsapp-58x58.png);
+        background-repeat: no-repeat; 
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transition:all 300ms;
+    }
+
+    .whatsapp{
+        border:2px solid #128C7E;
+        outline:1px solid rgba(255, 255, 255, 0.158);
+        background-size:2rem;
+        background-image: url(./Assets/Images/whatsappWhiteTrans.svg.svg);
+    }
+         
+    .whatsapp:hover{
+        background-color: #128C7E !important;
     }
 
     .robotContainer-All{
         display: flex;
+        align-items: center;
         position:relative;
     }
 
@@ -179,30 +201,8 @@
         z-index:2;
     }
 
-    .robotChat{   
-        min-width: var(--radisuWhatsappHolder);
-        min-height: var(--radisuWhatsappHolder);
-        border-radius:100%; 
-        cursor:pointer;
-    }    
-
-    .whatsapp{
-        border-radius: 50%;
-        min-width: var(--radisuWhatsappHolder);
-        min-height: var(--radisuWhatsappHolder);
-        cursor: pointer;
-        transition:all 300ms;
-        background-image: url(./Assets/Images/whatsapp_ico);
-
-    }
-
-    .whatsapp{
-        /* background-color: red; */
-    }
-
-    .whatsapp:hover{
-        background-color: color-mix(in srgb, blue, green)
-    }
+   
+  
 
     .ActionBodyBottom{
         position: fixed;
@@ -211,5 +211,6 @@
         bottom:5vw;
         padding:10px 2%;
         width:100vw;
+        align-items: center;
         min-height:50px;
     }
