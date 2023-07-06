@@ -191,6 +191,17 @@
         min-width: var(--radisuWhatsappHolder);
         min-height: var(--radisuWhatsappHolder);
         cursor: pointer;
+        transition:all 300ms;
+        background-image: url(./Assets/Images/whatsapp_ico);
+
+    }
+
+    .whatsapp{
+        /* background-color: red; */
+    }
+
+    .whatsapp:hover{
+        background-color: color-mix(in srgb, blue, green)
     }
 
     .ActionBodyBottom{
