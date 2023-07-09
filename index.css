@@ -88,6 +88,13 @@
         position: relative;
     }
 
+    h3 span.accent, .entrance{
+        font-size: 1.5rem;
+    }
+
+   
+
+
     .whatsappcloseBtn{        
         background-color:white;
         width: var(--closeBtnRadius);
@@ -101,9 +108,11 @@
         border-radius: 50%;
         transform:scale(.8) translateY(-5px);
     }
+
 .whatsappchatBoxPopUp h4{
     color:rgba(255, 255, 255, 0.623);
 }
+
     .hero_def_icon{   
         width: 50px;
         height: 50px;
@@ -201,9 +210,6 @@
         z-index:2;
     }
 
-   
-  
-
     .ActionBodyBottom{
         position: fixed;
         display: flex; 
@@ -214,3 +220,25 @@
         align-items: center;
         min-height:50px;
     }
+
+    ul li{
+        list-style: disc;
+    }
+
+    .stylizedListContainer{
+        display: grid;
+        position: relative;
+        margin-left:2rem;
+        padding-top:1rem;
+    }       
+
+    .stylizedListContainer div::before{
+        content:'';
+        position: absolute;
+        left:-3rem;
+        height:2rem;
+        width:2rem;
+        border-radius: 50%;
+        background-color: purple;
+    }
+   
