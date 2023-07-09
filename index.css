@@ -142,8 +142,9 @@
     
     .robotChat{   
         height: 25px;
-        background-image: url(./Assets/Images/askmeabroad-whatsapp-58x58.png);
-
+        background-image: url(./Assets/Images/robot-chat.svg);  
+        background-size: 2.5rem;      
+        background-color: purple;
     }    
 
     .robotChat, .whatsapp{             
@@ -151,7 +152,6 @@
         cursor: pointer;
         min-width: var(--radisuWhatsappHolder);
         min-height: var(--radisuWhatsappHolder);
-        background-color: purple;
         background-position: center center;
         background-repeat: no-repeat; 
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
