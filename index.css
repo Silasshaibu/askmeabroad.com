@@ -221,7 +221,7 @@
         min-height:50px;
     }
 
-    ul li{
+    ul.dottedBullet li{
         list-style: disc;
     }
 
