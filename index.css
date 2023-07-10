@@ -31,12 +31,26 @@
     }
 
     .whatsappchatBoxPopUp div:nth-child(1){
-        background-color: purple;
+        background-color: #8913c6;
         border-radius:40px 40px 0px 0px;
     }
 
     .whatsapp{
         position: relative;
+    }
+
+    .whatsapp::after{
+        content: '1';
+        top:-.25rem;
+        position: absolute;
+        right:-.25rem;
+        display: grid;
+        place-items: center;
+        background-color: red /*message notification color*/;
+        height:1.2rem;
+        color:white;
+        width: 1.2rem;
+        border-radius: 50%;
     }
 
     .callout{
@@ -68,14 +82,14 @@
     .whatsapp:hover .callout{
         display:block;
     }
-    
+
     .whatsappchatBoxPopUp div:nth-child(3){
         border-radius:0px 0px 40px 40px;
         background-color: white;
     }
 
-    :root{        
-        --radisuWhatsappHolder:60px;        
+    :root{
+        --radisuWhatsappHolder:60px;
         --closeBtnRadius:20px;
     }
 
@@ -92,10 +106,10 @@
         font-size: 1.5rem;
     }
 
-   
 
 
-    .whatsappcloseBtn{        
+
+    .whatsappcloseBtn{
         background-color:white;
         width: var(--closeBtnRadius);
         height: var(--closeBtnRadius);
@@ -113,13 +127,13 @@
     color:rgba(255, 255, 255, 0.623);
 }
 
-    .hero_def_icon{   
+    .hero_def_icon{
         width: 50px;
         height: 50px;
         padding: 10px;
     }
-    
-    .whatsappchatBoxPopUp{            
+
+    .whatsappchatBoxPopUp{
         position: absolute;
         display:none;
         grid-template-rows:.5fr .5fr .5fr;
@@ -134,7 +148,7 @@
         color:white;
         padding:15px 30px;
         border-radius:25px;
-        background-color: purple;
+        background-color: #8913c6;
         width:18ch;
         cursor:pointer;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -148,21 +162,21 @@
         width:auto;
         cursor:default;
     }
-    
-    .robotChat{   
-        height: 25px;
-        background-image: url(./Assets/Images/robot-chat.svg);  
-        background-size: 2.5rem;      
-        background-color: purple;
-    }    
 
-    .robotChat, .whatsapp{             
-        border-radius: 50%;        
+    .robotChat{
+        height: 25px;
+        background-image: url(./Assets/Images/robot-chat.svg);
+        background-size: 2.5rem;
+        background-color: #8913c6;
+    }
+
+    .robotChat, .whatsapp{
+        border-radius: 50%;
         cursor: pointer;
         min-width: var(--radisuWhatsappHolder);
         min-height: var(--radisuWhatsappHolder);
         background-position: center center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         transition:all 300ms;
     }
@@ -173,7 +187,7 @@
         background-size:2rem;
         background-image: url(./Assets/Images/whatsappWhiteTrans.svg.svg);
     }
-         
+
     .whatsapp:hover{
         background-color: #128C7E !important;
     }
@@ -212,7 +226,7 @@
 
     .ActionBodyBottom{
         position: fixed;
-        display: flex; 
+        display: flex;
         justify-content: space-between;
         bottom:5vw;
         padding:10px 2%;
@@ -221,6 +235,5 @@
         min-height:50px;
     }
 
-    
 
-   
+

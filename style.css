@@ -266,7 +266,7 @@ ul.dottedBullet{
     grid-template-rows: auto 1fr auto;
 }
 
-.default-section.trainingConsultancy div:nth-child(odd){background-color: purple;
+.default-section.trainingConsultancy div:nth-child(odd){background-color: #8913c6;
     color:white;
 }
 
@@ -309,10 +309,14 @@ ul.dottedBullet{
 
 .cardsItems h3{
     place-self: center;
-    color:purple;
+    color:#8913c6;
     max-width: 20ch;
     width: 12ch;
     height: 2rem;
+}
+
+.cardsItems:nth-child(1) h3{
+    width: 20ch; /*Strict on this*/
 }
 
 .cardsItems p{
@@ -320,11 +324,16 @@ ul.dottedBullet{
 }
 
 .cardsItems span{
+    place-self: center;
     min-height: 3rem;
     width:3rem;
-    place-self: center;
     display: grid;
     place-items: center;
+    margin-bottom: 1rem;
+    background-image: url(./Assets/Images/StarIcon.svg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
 }
 
 .default-section.advert{
@@ -373,7 +382,7 @@ ul.dottedBullet{
     }
 
     h3.accent{
-        color:purple;
+        color:#8913c6;
     }
 
    /*FOOTER*/
@@ -447,6 +456,10 @@ ul.dottedBullet{
     li a:hover{
         font-weight:700;
         color:var(--global-color-primary) !important;
+    }
+
+    .cardsLayout{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .heroRightReveal{
@@ -524,6 +537,11 @@ ul.dottedBullet{
     body{
         background-color: var(--global-color-white);
         padding:0;
+    }
+
+    .cardsLayout{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
 
     .imageContainer{
