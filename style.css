@@ -243,11 +243,54 @@ li a:active{
     }
 
     .default-section.trainingConsultancy div button{
-       margin-top:1.5rem;
-        
+       margin-top:1.5rem;        
     }
 
+    .introText{
+        text-align: center;
+        margin: 0 auto;
+        padding-top:200px;
+        color: white;
+    }
 
+    .default-section.advert{
+        position: relative;
+        background-color: green;
+        line-height: 1.5rem;
+    }
+
+    .board{
+        background-color: white;
+        position: absolute;
+        width:80%;
+        aspect-ratio: 3/1;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        top:0px;
+        left:50%;
+        display: flex;
+        flex:1;
+        margin:0 auto;
+        transform: translate(-50%, -39%);
+    }
+
+    .board div.text{        
+        padding:2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imageContainer{
+        width: 50%;
+        background-image: url(./Assets/Images/aboutUssection2half.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .text button{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width:fit-content;
+    }
 
    /*FOOTER*/
    .foot-layer1{
