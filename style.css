@@ -8,7 +8,8 @@
     --varHeight:350px;
     --headerDivFirstWidth:10%;
     --navListLiA:#353434;   
-   --mobileHeaderHeroHeight:80vh;
+    --mobileHeaderHeroHeight:80vh;
+    --boardHeight:20rem;
 }
 
 *{
@@ -128,7 +129,6 @@ button.primary{
 }    
 
 button.primary:hover{
-    /* transform:translateX(10px) scale(1.1); */
     outline: 3px solid rgb(94, 1, 94);
 }
 
@@ -160,7 +160,6 @@ button.primary:hover{
 }
 
 li{ 
-    /* min-width:8ch; */
     list-style: none;
 }
 
@@ -180,8 +179,6 @@ li a:active{
 /*SECTIONS*/
 .default-section{
     display: flex;
-    min-height:350px;
-    height:fit-content;
     padding:5% 10%;
 }
 
@@ -193,21 +190,12 @@ li a:active{
 .default-section.first{
     display: block;
     text-align: center;
-    min-height: 50px;
     padding:10% 15%;
-}
-
-.default-section div:nth-child(even){
-    flex-direction: row-reverse;
 }
 
 .default-section.first h3{
     padding-bottom:20px;
 }   
-
-:root{
-    --boardHeight:20rem;
-}
 
 .default-section.second{
     padding-bottom:calc(var(--boardHeight) / 2);
@@ -215,28 +203,44 @@ li a:active{
 
 .default-section.second div{
     flex:1;
-    border:1px solid green;
 }
 
 ul.dottedBullet li{
     list-style: disc;
     }
 
-.stylizedListCont{
-background-color: red;
-}  
+    
+:root{
+    --uniformListPadding:20px;
+}
 
 .stylCont{
     display: flex;
+    padding-top:var(--uniformListPadding);
 }
 
-.stylCont div{
-    max-width:80%;
-    flex:1;
+.stylCont div{padding-left:var(--uniformListPadding);
 }
 
-.stylCont Img, .stylCont div{
-    border:1px solid black;
+
+.stylCont img{
+    flex-basis:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-color: purple;
+    background-position: center;    
+}
+
+
+
+.stylCont img{    
+    background-image: url(./Assets/Images/download.svg);
+}
+
+.stylCont:last-child img{
+    background-image: url(./Assets/Images/robot-chat.svg);
 }
 
    
@@ -280,9 +284,9 @@ background-color: red;
     line-height: 1.5rem;
 }    
 
-    .board{
-        background-color: white;
-        position: absolute;
+.board{
+    background-color: white;
+    position: absolute;
         height: var(--boardHeight);
         aspect-ratio: 3.5/1;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -294,7 +298,7 @@ background-color: red;
         transform: translate(-50%, -39%);
     }
 
-    .board div.text{        
+.board div.text{        
         padding:2rem;
         display: flex;
         flex-direction: column;
@@ -447,7 +451,6 @@ background-color: red;
         padding-left:10px;       
     }
 
-    
     .foot-layer1{
         padding:20px 5%;
     }  
@@ -458,8 +461,7 @@ background-color: red;
     
         .board{
             aspect-ratio: 2/1;
-        } 
-    
+        }     
     }
 
 
@@ -483,11 +485,9 @@ background-color: red;
         ;
         }
 
-        .default-section.trainingConsultancy div{
+    .default-section.trainingConsultancy div{
             height: 300px;
-        }
-
-        
+        }       
 
 
     .heroSection  div p{
@@ -520,7 +520,6 @@ background-color: red;
     
     header div:nth-child(1){
         order:1;
-        /* width:var(--headerDivFirstWidth); */
     }
     
     header div:nth-child(2){
@@ -599,10 +598,8 @@ background-color: red;
     } 
     
     .default-section.second{
-        padding:10% 2%;
-       
+        padding:10% 2%;       
     }
-
    
    .foot-layer1 div{
         flex-basis:100%;
