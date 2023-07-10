@@ -221,6 +221,7 @@ li a:active{
 
 ul.dottedBullet li{
     list-style: disc;
+    line-height: 1.5rem;
     }
 
 ul.dottedBullet{
@@ -428,8 +429,38 @@ ul.dottedBullet{
         flex-direction: column;
     }
 
+    .howItWorks.Intro h1{
+        font-size:2.5rem;
+        padding:2rem auto;
+
+    }
+
+    .count{
+        font-size: 2.75rem;
+    }
+
+    .achieved, .howItWorks.Intro p{
+        font-size: 1.5rem;
+    }
+
+    .howItWorks.Intro p{
+        padding:2rem;
+    }
+
     button{
         font-size: 1rem;
+    }
+
+    .single.section{
+        width: 80%;
+        margin: 0 auto;
+        padding:5%;
+        display: grid;
+        /* border:1px solid black; */
+        grid-template-columns: auto 1fr;
+        gap:2rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
     }
 
     .default-section.howItWorks{
@@ -440,7 +471,7 @@ ul.dottedBullet{
         padding:0 10%;
     }
 
-    .default-section.howItWorks.Intro{
+    .howItWorks.Intro{
         text-align: center;
     }
 
@@ -613,6 +644,14 @@ ul.dottedBullet{
 
     .default-section{
         padding:5% 5%;
+    }
+
+    .single.section{
+        width: 100%;
+        padding:4%;
+        gap:1rem;
+        grid-template-columns: 1fr;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
     .foot-layer1 div{
