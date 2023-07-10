@@ -206,10 +206,6 @@ li a:active{
     padding-bottom:20px;
 }
 
-/* .default-section.second{
-    padding-bottom:calc(var(--boardHeight) / 2);
-} */
-
 .default-section.second div img{
     display: block;
     margin:0 auto;
@@ -454,12 +450,12 @@ ul.dottedBullet{
     .single.section{
         width: 80%;
         margin: 0 auto;
-        padding:5%;
+        padding:2rem;
         display: grid;
-        /* border:1px solid black; */
-        grid-template-columns: auto 1fr;
-        gap:2rem;
+        grid-template-columns: auto 15ch;
+        gap:1rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        align-items: end;
 
     }
 
@@ -521,6 +517,9 @@ ul.dottedBullet{
     background-color: var(--global-color-primary);
     display: flex;
     flex-wrap: wrap;
+    }
+    footer{
+        line-height: 1.5rem;
     }
 
     .foot-layer1 div{
@@ -590,7 +589,7 @@ ul.dottedBullet{
     }
 
 /* TABLET SCREEN */
-@media (max-width:800px){
+@media (max-width:1024px){
     header nav ul:nth-child(2) li a{
         color:var(--navListLiA);
     }
@@ -646,6 +645,15 @@ ul.dottedBullet{
         padding:5% 5%;
     }
 
+    .four-steps{
+        display: grid;
+        gap:1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px;
+        padding:1rem 0px;
+    }
+
+
     .single.section{
         width: 100%;
         padding:4%;
@@ -653,6 +661,8 @@ ul.dottedBullet{
         grid-template-columns: 1fr;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
+
+
 
     .foot-layer1 div{
         flex-basis:50%;
@@ -824,6 +834,14 @@ ul.dottedBullet{
 
     svg{
     position: absolute;
+    }
+
+    .four-steps{
+        display: grid;
+        gap:1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        padding:1rem 0px;
     }
 
     .default-section{
