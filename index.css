@@ -99,15 +99,15 @@
     }
 
     .whatsappContainer-All{
-        position: relative;
+        position: fixed;
+        bottom:2rem;
+        left:2rem;
+        width:2rem;
     }
 
     h3 span.accent, .entrance{
         font-size: 1.5rem;
     }
-
-
-
 
     .whatsappcloseBtn{
         background-color:white;
@@ -195,7 +195,9 @@
     .robotContainer-All{
         display: flex;
         align-items: center;
-        position:relative;
+        position:fixed;
+        bottom:2rem;
+        right:2rem;
     }
 
     .robotCallout{
@@ -224,16 +226,6 @@
         z-index:2;
     }
 
-    .ActionBodyBottom{
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
-        bottom:5vw;
-        padding:10px 2%;
-        width:100vw;
-        align-items: center;
-        min-height:50px;
-    }
 
 
 
