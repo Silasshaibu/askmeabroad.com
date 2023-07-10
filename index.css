@@ -221,28 +221,6 @@
         min-height:50px;
     }
 
-    ul.dottedBullet li{
-        list-style: disc;
-    }
+    
 
-    .stylizedListContainer{
-        display: flex;
-        border:1px solid black;
-        height:300px;
-        align-items: baseline !important;
-
-        flex-direction: column !important;
-    }
-      
-    .list{
-        display: flex;
-        border:1px solid red;
-        align-items: baseline !important;
-        
-    }
-
-    .stylizedlist{
-        background-color: red;
-        max-width: 3rem !important;
-        overflow: hidden;
-    } 
+   

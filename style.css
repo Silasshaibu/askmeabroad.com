@@ -7,7 +7,8 @@
     --global-color-white: #FFFFFF;
     --varHeight:350px;
     --headerDivFirstWidth:10%;
-    --navListLiA:#353434;
+    --navListLiA:#353434;   
+   --mobileHeaderHeroHeight:80vh;
 }
 
 body{
@@ -20,7 +21,6 @@ body{
 
 .section.headerNav{
     padding:2% 10%;
-    /* background-color: red; */
 }
 
 .heroSection{
@@ -51,7 +51,6 @@ header div:nth-child(1){
     order:1;
     width:11ch;
     align-self: center;
-    /* width:var(--headerDivFirstWidth); */
 }
 
 header nav{
@@ -180,90 +179,111 @@ li a:active{
 }
 
 /*SECTIONS*/
-   .default-section{
+.default-section{
     display: flex;
     min-height:350px;
     height:fit-content;
     padding:5% 10%;
-   }
+}
 
-   .default-section  p, .heroSection p{
-    padding-top:10px; /* added a bit of spacing to the top of every paragraph */
+.default-section  p, .heroSection p{
+    padding-top:10px; 
     line-height: 1.5rem;
-   }
+}
 
-   .default-section.first{
+.default-section.first{
     display: block;
     text-align: center;
     min-height: 50px;
     padding:10% 15%;
-   }
+}
 
-   .default-section div:nth-child(even){
-        flex-direction: row-reverse;
-    }
-   .default-section.first h3{
+.default-section div:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.default-section.first h3{
     padding-bottom:20px;
-   }   
+}   
 
-   .default-section.second div{
+:root{
+    --boardHeight:20rem;
+}
+
+.default-section.second{
+    padding-bottom:calc(var(--boardHeight) / 2);
+}
+
+.default-section.second div{
     flex:1;
-    align-self: center;
-   }
+    border:1px solid green;
+}
 
-   .default-section.second div:nth-child(1){
+.default-section.second div:nth-child(1){
     padding-right:5%;
     order:1;
    }
 
-   .default-section.second div:nth-child(2){
+.default-section.second div:nth-child(2){
     order:2;
    }  
    
-    .default-section.trainingConsultancy{
+.default-section.trainingConsultancy{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top:0;
     padding-bottom:0;    
     column-gap:1rem;
-    ;
     }
 
-    .default-section.trainingConsultancy div{
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        padding: 1.5rem;
-        position: relative;
-        border-radius:1.2rem;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
+.default-section.trainingConsultancy div{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1.5rem;
+    position: relative;
+    border-radius:1.2rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.default-section.trainingConsultancy div:nth-child(odd){background-color: purple;
+    color:white;
+}
+
+.default-section.trainingConsultancy div button{
+    margin-top:1.5rem;        
     }
 
-    .default-section.trainingConsultancy div:nth-child(odd){background-color: purple;
-        color:white;
+ul.dottedBullet li{
+    list-style: disc;
     }
 
-    .default-section.trainingConsultancy div button{
-       margin-top:1.5rem;        
-    }
+.stylizedListCont{
+background-color: red;
+display: flex;
+/* flex-direction: column !important; */
+}  
 
-    .introText{
-        text-align: center;
-        margin: 0 auto;
-        padding-top:200px;
-        color: white;
-    }
+.stylCont Img, .stylCont div{
+    border:1px solid black;
+}
+.introText{
+    text-align: center;
+    margin: 0 auto;
+    padding-top:200px;
+    color: white;
+}
 
-    .default-section.advert{
-        position: relative;
-        background-color: green;
-        line-height: 1.5rem;
-    }
+.default-section.advert{
+    position: relative;
+    background-color: green;
+    line-height: 1.5rem;
+}    
 
     .board{
         background-color: white;
         position: absolute;
-        width:80%;
-        aspect-ratio: 3/1;
+        height: var(--boardHeight);
+        aspect-ratio: 3.5/1;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         top:0px;
         left:50%;
@@ -281,10 +301,11 @@ li a:active{
     }
 
     .imageContainer{
-        width: 50%;
+        width: 50%;        
         background-image: url(./Assets/Images/aboutUssection2half.png);
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .text button{
@@ -352,6 +373,10 @@ li a:active{
     .foot-layer1 ul li:nth-child(1){
         padding-top:20px;
     }
+
+    h3.cardTitle{
+        height: 3rem;
+    } 
 
 
 /* TABLET SCREEN */
@@ -421,29 +446,21 @@ li a:active{
         padding-left:10px;       
     }
 
+    
     .foot-layer1{
         padding:20px 5%;
-    }
-}
+    }  
 
-h3.cardTitle{
-    height: 3rem;
-}
-
-:root{
-    --mobileHeaderHeroHeight:80vh;
-}
-
-/*TABLET SCREEN*/
-@media (max-width:800px){
-body{
-    background-color: rgba(255, 0, 0, 0.171);
+    .section.headerNav{
+        padding: 2% 5%;
+        }
+    
+        .board{
+            aspect-ratio: 2/1;
+        } 
+    
     }
 
-.section.headerNav{
-    padding: 2% 5%;
-    }
-}
 
 /*MOBILE SCREEN*/
 @media (max-width:550px){
@@ -451,6 +468,10 @@ body{
         background-color: var(--global-color-white);
         padding:0;
     }
+
+    .board{
+        aspect-ratio: 1/1;}
+
 
     .default-section.trainingConsultancy{
         display: grid;
@@ -578,6 +599,7 @@ body{
     
     .default-section.second{
         padding:10% 2%;
+       
     }
 
    .default-section.second:nth-child(odd){
