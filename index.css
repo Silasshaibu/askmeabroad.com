@@ -226,19 +226,23 @@
     }
 
     .stylizedListContainer{
-        display: grid;
-        position: relative;
-        margin-left:2rem;
-        padding-top:1rem;
-    }       
+        display: flex;
+        border:1px solid black;
+        height:300px;
+        align-items: baseline !important;
 
-    .stylizedListContainer div::before{
-        content:'';
-        position: absolute;
-        left:-3rem;
-        height:2rem;
-        width:2rem;
-        border-radius: 50%;
-        background-color: purple;
+        flex-direction: column !important;
     }
-   
+      
+    .list{
+        display: flex;
+        border:1px solid red;
+        align-items: baseline !important;
+        
+    }
+
+    .stylizedlist{
+        background-color: red;
+        max-width: 3rem !important;
+        overflow: hidden;
+    } 
