@@ -424,6 +424,66 @@ ul.dottedBullet{
         background-image: url(./Assets/Images/download.svg);
     }
 
+    .default-section.howItWorks{
+        flex-direction: column;
+    }
+
+    button{
+        font-size: 1rem;
+    }
+
+    .default-section.howItWorks{
+        padding:5rem 10%;
+    }
+
+    .default-section.latestNews{
+        padding:0 10%;
+    }
+
+    .default-section.howItWorks.Intro{
+        text-align: center;
+    }
+
+    .carouselContainer{
+        background-color: grey;
+        height: 400px;
+    }
+
+    .four-steps{
+        display: grid;
+        gap:1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px;
+        padding:1rem 0px;
+    }
+
+    .actionSection {
+        margin: 0 auto;
+    }
+
+    .default-section.latestNews{
+        display: block;
+        text-align: center;
+    }
+    .step{
+        display: flex;
+        padding: 1rem;
+        min-height:10rem;
+        flex-direction: column;
+        align-items: baseline;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .step div.icon{
+        width: 3rem;
+        height: 3rem;
+        background-image: url(
+            ./Assets/Images/file-icon.png
+        );
+        background-size: 3rem;
+        background-repeat: no-repeat;
+    }
+
    /*FOOTER*/
    .foot-layer1{
     padding:20px 10%;
