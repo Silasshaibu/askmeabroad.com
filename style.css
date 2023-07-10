@@ -347,14 +347,13 @@ ul.dottedBullet{
 
 .default-section.advert{
     position: relative;
-    background-color: rgb(197, 8, 197);
+    background-color:#8913C6;
     line-height: 1.5rem;
     margin-top: var(--spacBtwAdvBoardAndPrevBoard);
 }
 
 .board{
     background-color: white;
-    border: 1px solid black;
     position: absolute;
     width: 90%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -392,6 +391,37 @@ ul.dottedBullet{
 
     h3.accent{
         color:#8913c6;
+    }
+
+    .default-section.boast{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:2rem;
+        text-align: center;
+        color:white;
+        background-color: rgb(70, 12, 109);
+    }
+
+    .achievements div.icon{
+        height: 3rem;
+        min-width: 3rem;
+        width: 3rem;
+        background-size: 3rem;
+        background-repeat: none;
+        margin:0 auto;
+        align-self: center;
+    }
+
+    .achievements:nth-child(3) div.icon{
+        background-image: url(./Assets/Images/download.svg);
+    }
+
+    .achievements:nth-child(1) div.icon{
+        background-image: url(./Assets/Images/download.svg);
+    }
+
+    .achievements:nth-child(2) div.icon{
+        background-image: url(./Assets/Images/download.svg);
     }
 
    /*FOOTER*/
