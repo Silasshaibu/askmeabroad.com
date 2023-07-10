@@ -412,15 +412,15 @@ ul.dottedBullet{
         align-self: center;
     }
 
-    .achievements:nth-child(3) div.icon{
-        background-image: url(./Assets/Images/download.svg);
-    }
-
     .achievements:nth-child(1) div.icon{
-        background-image: url(./Assets/Images/download.svg);
+        background-image: url(./Assets/Images/globe.svg);
     }
 
     .achievements:nth-child(2) div.icon{
+        background-image: url(./Assets/Images/download.svg);
+    }
+
+    .achievements:nth-child(3) div.icon{
         background-image: url(./Assets/Images/download.svg);
     }
 
