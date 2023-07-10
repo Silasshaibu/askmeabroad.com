@@ -1,6 +1,7 @@
 /*DEFAULT SETTINGS*/
 :root{
     --global-color-primary: #360B52;
+    --global-color-primary-special:#9427dd;
     --global-color-secondary: #54595F;
     --global-color-text: #7A7A7A;
     --global-color-accent: #3C3F3C;
@@ -128,6 +129,16 @@ button.primary, button.secondary:hover{
 button.secondary, button.primary:hover{
     background-color: var(--global-color-white);
     color:var(--global-color-primary);
+}
+
+button.primary.special{
+    background-color: var(--global-color-primary);
+    color:var(--global-color-white);
+}
+
+button.primary.special:hover{
+    background-color: var(--global-color-primary-special);
+    color:var(--global-color-white);
 }
 
 .heroSection{
