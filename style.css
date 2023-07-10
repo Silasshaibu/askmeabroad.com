@@ -1,6 +1,6 @@
 /*DEFAULT SETTINGS*/
 :root{
-    --global-color-primary: #8913C6;
+    --global-color-primary: #360B52;
     --global-color-secondary: #54595F;
     --global-color-text: #7A7A7A;
     --global-color-accent: #3C3F3C;
@@ -111,25 +111,23 @@ logo h3, span.accent{
     padding-bottom: 30px;
 }
 
+/*BUTTON*/
 button{
     padding:15px 30px;
     border-radius:8px;
     border:none;
-    background-color: var(--global-color-primary);
-    color:var(--global-color-white);
     cursor:pointer;
+    transition: all 300ms;
 }
 
-button.primary{
+button.primary, button.secondary:hover{
     background-color: var(--global-color-primary);
     color:var(--global-color-white);
-    border:2px solid var(--global-color-white);
-    outline:0px solid transparent;
-    transition: outline 300ms;
 }
 
-button.primary:hover{
-    outline: 3px solid rgb(94, 1, 94);
+button.secondary, button.primary:hover{
+    background-color: var(--global-color-white);
+    color:var(--global-color-primary);
 }
 
 .heroSection{
@@ -446,6 +444,18 @@ ul.dottedBullet{
         padding-top:20px;
     }
 
+    .introText button{
+        margin:5rem auto;
+    }
+
+    button{
+        max-width:fit-content;
+        transition:all 300ms;
+    }
+
+    button:hover{
+        transform: scale(1.2);
+    }
 
 /* TABLET SCREEN */
 @media (max-width:800px){
@@ -646,7 +656,10 @@ ul.dottedBullet{
         border:2px solid var(--global-color-primary);
         outline:0px solid transparent;
         transition: all 300ms;
+
     }
+
+
 
     button.primary:hover{
         transform:translateX(10px) scale(1.1);
