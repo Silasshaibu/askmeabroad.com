@@ -472,8 +472,38 @@ ul.dottedBullet{
     }
 
     .carouselContainer{
-        background-color: grey;
-        height: 400px;
+        background-color: #efefef;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(9, 33%);
+        gap:1%;
+        margin-bottom:5rem ;
+    }
+
+    .carouselRetainer{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slide{
+        background-color: rgb(221, 221, 221);
+        /* border:1px solid black; */
+        border-radius: 1rem;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr) ;
+        overflow: hidden;
+    }
+
+    .slide div:not(.imgCont){
+        padding:1rem;
+    }
+
+
+
+    .imgContainer{
+        overflow: hidden;
+        height: 100px;
+
     }
 
     .four-steps{

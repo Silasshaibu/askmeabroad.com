@@ -213,10 +213,8 @@
         cursor: default;
     }
 
-
     .robotCallout::before{
-        /* background-color: black; */
-        content:url('./Assets/Images/icons8-close.svg');
+        content:url('./Assets/Images/icons8-close.svg'); /*redesign this svg content by adding making the x filled with white background*/
         background-color:white;
         left:-.8rem;
         display: grid;
@@ -241,7 +239,3 @@
         border-radius: 0% 20% 0% 20%;
         z-index:2;
     }
-
-
-
-
