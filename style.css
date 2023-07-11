@@ -518,8 +518,23 @@ ul.dottedBullet{
     display: flex;
     flex-wrap: wrap;
     }
+
     footer{
         line-height: 1.5rem;
+        position: relative;
+        padding-top:20vh;
+        background-color: var(--global-color-primary);
+    }
+
+    .single.section.secondaryAdBoard{
+        position: absolute;
+        top:0;
+        left:50%;
+        transform:translate(-50%, -10vh);
+        color:black;
+        background-color: white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
     }
 
     .foot-layer1 div{
@@ -689,6 +704,14 @@ ul.dottedBullet{
         .board{
             aspect-ratio: 2/1;
         }
+
+        footer{
+            padding-top:25vh;
+        }
+
+        .single.section.secondaryAdBoard{
+            transform:translate(-50%, -12vh);
+        }
     }
 
 
@@ -806,10 +829,7 @@ ul.dottedBullet{
         border:2px solid var(--global-color-primary);
         outline:0px solid transparent;
         transition: all 300ms;
-
     }
-
-
 
     button.primary:hover{
         transform:translateX(10px) scale(1.1);
@@ -858,4 +878,14 @@ ul.dottedBullet{
    .foot-layer1 div{
         flex-basis:100%;
     }
+
+    footer{
+        padding-top:25vh;
+    }
+
+    .single.section.secondaryAdBoard{
+        transform:translate(-50%, -12vh);
+    }
+
+
 }
