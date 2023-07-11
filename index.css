@@ -213,19 +213,7 @@
         cursor: default;
     }
 
-    .robotCallout::before{
-        content:url('./Assets/Images/icons8-close.svg'); /*redesign this svg content by adding making the x filled with white background*/
-        background-color:white;
-        left:-.8rem;
-        display: grid;
-        color: white;
-        place-items: center;
-        top:-.5rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        position: absolute;
-        border-radius: 50%;
-    }
+
 
     .robotCallout::after{
         content:'';
