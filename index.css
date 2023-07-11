@@ -213,6 +213,22 @@
         cursor: default;
     }
 
+
+    .robotCallout::before{
+        /* background-color: black; */
+        content:url('./Assets/Images/icons8-close.svg');
+        background-color:white;
+        left:-.8rem;
+        display: grid;
+        color: white;
+        place-items: center;
+        top:-.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        border-radius: 50%;
+    }
+
     .robotCallout::after{
         content:'';
         min-height:2ch;
