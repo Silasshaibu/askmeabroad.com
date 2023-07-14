@@ -211,9 +211,6 @@ button.primary.special:hover{
     transform:translateX(-50%);
 }
 
-
-
-
 .heroRightReveal{
     border-radius:0px 0px 0px 50px;
     overflow:hidden;
