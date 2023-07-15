@@ -124,8 +124,20 @@ header nav ul li{
     text-align: center;
 }
 
-header nav ul li a{
+.miniMenu.one li a{
     color:#353434;
+}
+
+.miniMenu.two li a{
+    color:white ;
+}
+
+.miniMenu li a:hover{
+    font-weight: 500;
+}
+
+.miniMenu.one li a:hover{
+    color:var(--global-color-primary);
 }
 
 header nav ul:nth-child(2) li a{
@@ -331,7 +343,7 @@ ul.dottedBullet{
 
 .default-section.trainingConsultancy div button{
     margin-top:1.5rem;
-    }
+}
 
 .introText{
     display: flex;
@@ -481,7 +493,6 @@ ul.dottedBullet{
     .howItWorks.Intro h1{
         font-size:2.5rem;
         padding:2rem auto;
-
     }
 
     .count{
@@ -691,10 +702,14 @@ ul.dottedBullet{
         justify-content: space-between;
     }
 
+    .mobileMenuBtnContainer{
+        display:none;
+    }
+
 
 /* TABLET SCREEN */
 @media (max-width:1024px){
-    header nav ul:nth-child(2) li a{
+    ul a{
         color:var(--navListLiA);
     }
 
@@ -829,12 +844,44 @@ ul.dottedBullet{
         }
     }
 
+    .heroIcons-def{
+        width:2rem;
+    }
+
+
 
 /*MOBILE SCREEN*/
 @media (max-width:768px){
     .mainHeader{
         display: none;
     }
+
+    .leftCol{
+        padding-top:80px;
+    }
+
+    .heroIcons-def{
+        background-color: white;
+        border-radius:3px;
+        padding:2px 4px;
+        cursor: pointer;
+    }
+
+    .mobileMenuBtnContainer{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .MainMenu.left{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .miniMenu.one{
+        display: none;
+    }
+
+
 
     .cardsLayout{
         grid-template-columns: repeat(1, 1fr);
