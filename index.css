@@ -200,11 +200,21 @@
         right:2rem;
     }
 
+    .closeBtnRobotCallOut{
+        background-color: black;
+        position: absolute;
+        color:white;
+        top:-.8rem;
+        left:-.8rem;
+        width:1.5rem;
+        border-radius:50%;
+        cursor: pointer;
+    }
+
     .robotCallout{
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: relative;
         padding:15px;
-        top:0;
-        left:-100%;
         background-color: white;
         border-radius: 5px;
         margin-right:20px;
@@ -212,8 +222,6 @@
         z-index: 1;
         cursor: default;
     }
-
-
 
     .robotCallout::after{
         content:'';

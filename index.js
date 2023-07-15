@@ -2,16 +2,20 @@ const whatsappChatIcon = document.getElementById('whatsappIcon');
 
 const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
 
+const robotCallOut = document.getElementById('y');
 //Opening the whatsappPopUpChat with the whatsapp Close btn
 function openWhatsappPopUp(){
   whatsappPopUpChatBox.style.display ='grid';
 }
 
+// function closeRobotCallOut(){
+//   console.log('Clicked');
+// }
+
 //Closing the whatsappPopUpChat with the whatsapp Close btn
 function whatsappCloseBtn(){
   whatsappPopUpChatBox.style.display ='none';
 }
-
 
 //Change the color of the whatsapp Contact Icon
 function changeBackgroundColor() {
