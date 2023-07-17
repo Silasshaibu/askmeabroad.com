@@ -2,19 +2,21 @@ const whatsappChatIcon = document.getElementById('whatsappIcon');
 
 const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
 
-const robotCallOut = document.getElementById('y');
+
 //Opening the whatsappPopUpChat with the whatsapp Close btn
-function openWhatsappPopUp(){
+function openWhatsappChatBox(){
   whatsappPopUpChatBox.style.display ='grid';
 }
-
-// function closeRobotCallOut(){
-//   console.log('Clicked');
-// }
-
 //Closing the whatsappPopUpChat with the whatsapp Close btn
-function whatsappCloseBtn(){
+function exitWhatsappChatBox(){
   whatsappPopUpChatBox.style.display ='none';
+}
+
+function closeBtnRobotCallOut(){
+  const robotCallout = document.querySelector('.robotCallout');
+
+  const robotCallOutExitBtn = document.querySelector('.closeBtnRobotCallOut');
+  robotCallout.style.display='none';
 }
 
 //Change the color of the whatsapp Contact Icon
