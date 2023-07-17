@@ -13,6 +13,7 @@
     --boardHeight:20rem;
 }
 
+
 *{
     margin: 0px;
     padding:0px;
@@ -496,13 +497,38 @@ ul.dottedBullet{
         padding:2rem auto;
     }
 
-    .count{
+        .count{
         font-size: 2.75rem;
     }
 
     .achieved, .howItWorks.Intro p{
         font-size: 1.5rem;
     }
+
+.step{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.step h3.accent{
+    padding:0px 1rem;
+}
+
+.step .icon{
+position: absolute;
+right: 0;
+bottom:50%;
+border-radius: 50%;
+padding:.5rem;
+transform: translate(70%, 50%);
+z-index:5;
+}
+
+.step:last-child .icon{
+    display:none;
+}
 
     .howItWorks.Intro p{
         padding:2rem;
@@ -521,7 +547,6 @@ ul.dottedBullet{
         gap:1rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         align-items: end;
-
     }
 
     .default-section.howItWorks{
@@ -597,7 +622,7 @@ ul.dottedBullet{
         width: 3rem;
         height: 3rem;
         background-image: url(
-            ./Assets/Images/file-icon.png
+            ./Assets/Images/DoubleFancyHeadedArrow.svg
         );
         background-size: 3rem;
         background-repeat: no-repeat;
@@ -718,6 +743,16 @@ ul.dottedBullet{
         color:var(--navListLiA);
     }
 
+.step{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.step h3.accent{
+    padding:0px 1rem;
+}
+
     .mainHeader{
         min-height:50px;
         padding:2% 5%;
@@ -743,7 +778,6 @@ ul.dottedBullet{
     .mainHeader li:hover{
         background-color: rgb(219, 219, 219);
     }
-
 
     .MainMenu.left, .MainMenu.right{
         display: none;
@@ -799,11 +833,18 @@ ul.dottedBullet{
     }
 
     .four-steps{
-        display: grid;
-        gap:1rem;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        gap:.5rem;
+        position: relative;
         grid-template-rows: 200px;
-        padding:1rem 0px;
+    }
+
+    .step .icon{
+        position: absolute;
+        bottom:0%;
+        left:50%;
+        transform: rotate(90deg) translate(50%, 50%);
     }
 
     .single.section{
@@ -847,14 +888,7 @@ ul.dottedBullet{
         .single.section.secondaryAdBoard{
             transform:translate(-50%, -12vh);
         }
-
-
     }
-
-
-
-
-
 
 
 /*MOBILE SCREEN*/
@@ -887,8 +921,6 @@ ul.dottedBullet{
     .miniMenu.one{
         display: none;
     }
-
-
 
     .cardsLayout{
         grid-template-columns: repeat(1, 1fr);
@@ -929,11 +961,10 @@ ul.dottedBullet{
         padding-top:0;
         padding-bottom:0;
         gap:1.5rem;
-        ;
     }
 
     .default-section.trainingConsultancy div{
-            height: 300px;
+        height: 300px;
     }
 
     .heroSection  div p{
@@ -961,7 +992,7 @@ ul.dottedBullet{
     }
 
     .section.headerNav{
-    padding:5%;
+        padding:5%;
     }
 
     header div:nth-child(1){
@@ -982,7 +1013,6 @@ ul.dottedBullet{
     .heroSection{
         display:block;
         padding:0% 5%;
-        /* padding-top:125px; */
     }
 
     header nav:nth-child(2){
@@ -1067,6 +1097,4 @@ ul.dottedBullet{
     .single.section.secondaryAdBoard{
         transform:translate(-50%, -12vh);
     }
-
-
 }
