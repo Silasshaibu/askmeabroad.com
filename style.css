@@ -23,7 +23,7 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: product sans, sans-serif, helvetica, arial;
+    font-family: "Archivo", product sans, sans-serif, helvetica, arial;
 }
 
 .section.headerNav{
@@ -449,9 +449,10 @@ ul.dottedBullet{
 
     h3.cardTitle{
         height: 3rem;
+
     }
 
-    h3.accent{
+    h3.accent, .logoSection{
         color:#8913c6;
     }
 
