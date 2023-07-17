@@ -706,6 +706,10 @@ ul.dottedBullet{
         display:none;
     }
 
+    .heroIcons-def{
+        width:2rem;
+    }
+
 
 /* TABLET SCREEN */
 @media (max-width:1024px){
@@ -842,11 +846,13 @@ ul.dottedBullet{
         .single.section.secondaryAdBoard{
             transform:translate(-50%, -12vh);
         }
+
+
     }
 
-    .heroIcons-def{
-        width:2rem;
-    }
+
+
+
 
 
 
