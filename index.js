@@ -58,8 +58,33 @@ body.style.transform = 'translateX(0%)';
 //Setting the copyright year to this present year
 const thisYear = new Date().getFullYear();
 const currentYear = document.querySelector('#currentYear');
-
 currentYear.innerHTML = thisYear;
+
+
+//Putting Carret Right Arrows and Nav or Ul that has nested list
+const menuItems = document.querySelectorAll('.menu-item');
+menuItems.forEach((menuItem) => {
+    // Check if the menu item contains <ul> or <li> elements
+    if (menuItem.querySelector('ul') || menuItem.querySelector('li')) {
+      // Add the menu-caret class to the menu item
+      menuItem.classList.add('menu-caret');
+
+      // Add click event listener to toggle visibility and rotate caret
+      menuItem.addEventListener('click', () => {
+        const nestedList = menuItem.querySelector('ul');
+
+        // Toggle the visibility of the nested list
+        if (nestedList) {
+          nestedList.classList.toggle('visible');
+        }
+
+        // Rotate the caret
+        menuItem.classList.toggle('rotate');
+      });
+    }
+});
+
+
 
 
 // let options = {

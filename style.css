@@ -697,6 +697,24 @@ z-index:5;
         cursor:pointer;
     }
 
+    .menu-caret{
+        background-color: pink;
+    }
+
+    .menu-item{
+        position: relative;
+    }
+
+    .nested{
+        display:block !important;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        left:0;
+        top:60px ;
+        background-color: white;
+        position:absolute !important;
+    }
+
+
     .foot-layer1 li{
         font-weight: 400;
         cursor: pointer;
