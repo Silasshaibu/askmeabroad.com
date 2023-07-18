@@ -697,16 +697,34 @@ z-index:5;
         cursor:pointer;
     }
 
-    .menu-caret{
-        background-color: pink;
+    .menu-caret::after {
+        content: '>';
+        transition: transform 0.3s;
+        position:absolute;
+        bottom:0;
+        padding-left:10px;
+        right:0;
+        transform: translate(-30%, -60%);
     }
+
+    .menu-caret.rotate::after {
+        transform: translateY(-.9rem) rotate(90deg);
+    }
+
+      .nested-list {
+        display: none;
+      }
+
+      .nested-list.visible {
+        display: block !important ;
+      }
 
     .menu-item{
         position: relative;
     }
 
-    .nested{
-        display:block !important;
+    .nested-list{
+        display: none !important;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         left:0;
         top:60px ;
