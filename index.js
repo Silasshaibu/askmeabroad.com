@@ -63,28 +63,39 @@ currentYear.innerHTML = thisYear;
 
 //Putting Carret Right Arrows and Nav or Ul that has nested list
 const menuItems = document.querySelectorAll('.menu-item');
+
 menuItems.forEach((menuItem) => {
     // Check if the menu item contains <ul> or <li> elements
     if (menuItem.querySelector('ul') || menuItem.querySelector('li')) {
       // Add the menu-caret class to the menu item
       menuItem.classList.add('menu-caret');
 
-      // Add click event listener to toggle visibility and rotate caret
+         // Add click event listener to toggle visibility, rotate caret, and select/deselect
       menuItem.addEventListener('click', () => {
-        const nestedList = menuItem.querySelector('ul');
+        // Deselect other menu items
+        menuItems.forEach((otherMenuItem) => {
+          if (otherMenuItem !== menuItem) {
+            otherMenuItem.classList.remove('active');
+            otherMenuItem.classList.remove('rotate');
+            const nestedList = otherMenuItem.querySelector('.nested-list');
+            if (nestedList) {
+              nestedList.classList.remove('visible');
+            }
+          }
+        });
 
         // Toggle the visibility of the nested list
+        const nestedList = menuItem.querySelector('.nested-list');
         if (nestedList) {
           nestedList.classList.toggle('visible');
         }
 
-        // Rotate the caret
+        // Toggle the rotation and active state of the menu item
         menuItem.classList.toggle('rotate');
+        menuItem.classList.toggle('active');
       });
     }
-});
-
-
+  });
 
 
 // let options = {

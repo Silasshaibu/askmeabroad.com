@@ -711,11 +711,7 @@ z-index:5;
         transform: translateY(-.9rem) rotate(90deg);
     }
 
-      .nested-list {
-        display: none;
-      }
-
-      .nested-list.visible {
+    .nested-list.visible {
         display: block !important ;
       }
 
@@ -730,6 +726,10 @@ z-index:5;
         top:60px ;
         background-color: white;
         position:absolute !important;
+    }
+
+    .menu-item.selected .nested-list {
+        display: block !important;
     }
 
 
