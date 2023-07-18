@@ -70,7 +70,7 @@ menuItems.forEach((menuItem) => {
       // Add the menu-caret class to the menu item
       menuItem.classList.add('menu-caret');
 
-         // Add click event listener to toggle visibility, rotate caret, and select/deselect
+      // Add click event listener to toggle visibility, rotate caret, and select/deselect
       menuItem.addEventListener('click', () => {
         // Deselect other menu items
         menuItems.forEach((otherMenuItem) => {
