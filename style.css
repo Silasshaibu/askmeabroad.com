@@ -694,6 +694,7 @@ z-index:5;
         padding:.3rem;
         border-radius:2px;
         margin:5px;
+        cursor:pointer;
     }
 
     .foot-layer1 li{
