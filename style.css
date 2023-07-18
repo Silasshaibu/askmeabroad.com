@@ -687,6 +687,15 @@ z-index:5;
         padding-bottom:20px;
     }
 
+    .foot-layer2 li svg{
+        position: relative;
+        width:2rem;height: 2rem;
+        background-color: rgba(255, 255, 255, 0.123);
+        padding:.3rem;
+        border-radius:2px;
+        margin:5px;
+    }
+
     .foot-layer1 li{
         font-weight: 400;
         cursor: pointer;
@@ -735,7 +744,6 @@ z-index:5;
     .heroIcons-def{
         width:2rem;
     }
-
 
 /* TABLET SCREEN */
 @media (max-width:1024px){
@@ -1092,6 +1100,15 @@ z-index:5;
 
     footer{
         padding-top:25vh;
+    }
+
+    .foot-layer2 li svg{
+        position:relative;
+        width:2rem;height: 2rem;
+        background-color: rgba(255, 255, 255, 0.123);
+        padding:.3rem;
+        border-radius:2px;
+        margin:5px;
     }
 
     .single.section.secondaryAdBoard{

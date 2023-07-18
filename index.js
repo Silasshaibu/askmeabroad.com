@@ -55,5 +55,28 @@ body.style.transform = 'translateX(0%)';
 }
 
 
+//Setting the copyright year to this present year
+const thisYear = new Date().getFullYear();
+const currentYear = document.querySelector('#currentYear');
+
+currentYear.innerHTML = thisYear;
+
+
+// let options = {
+//   root:null,
+//   rootMargin: "0px",
+//   threshold: 1.0,
+// };
+
+// let observer = new IntersectionObserver(function(){
+
+// }, options);
+
+
+
+
+
+
+
 
 
