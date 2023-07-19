@@ -33,11 +33,12 @@ body{
 
 .heroSection{
     padding-left:8%;
+    /* padding-top:2%; */
 }
 
 .leftCol{
 position: relative;
-padding-top:100px;
+padding-top:20vh;
 }
 
 .MainMenu{
@@ -54,7 +55,7 @@ padding-top:100px;
 
 .MainMenu.left{
 justify-content: space-between;
-/* background-color: red; */
+padding-top:15px;
 }
 
 .logoSection{
@@ -77,12 +78,10 @@ justify-content: space-between;
 .miniMenu{
     display:flex;
 }
-.MainMenu.left{
-
-}
 
 .MainMenu.right{
-
+    z-index: 1;
+    padding-top: 15px;
 }
 
 /*HEADER*/
@@ -205,7 +204,7 @@ button.primary.special:hover{
 
 .heroSection{
     position: relative;
-    min-height:400px;
+    min-height:60vh;
     height:fit-content;
     display:flex;
     overflow: hidden;
@@ -215,6 +214,8 @@ button.primary.special:hover{
     overflow: hidden;
     position: relative;
 }
+
+
 
 .heroImageContainer{
     position: absolute;
@@ -792,15 +793,32 @@ z-index:5;
         color:var(--navListLiA);
     }
 
-.step{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
+    .heroRightReveal.rightCol::before{
+        min-width:18%;
+    }
 
-.step h3.accent{
-    padding:0px 1rem;
-}
+    .heroRightReveal.rightCol::after, .heroRightReveal.rightCol::before{
+        content: '';
+        position: absolute;
+        aspect-ratio: 1/1;
+        background-color: #f78da854;
+        border-radius: 0px 0px 90% 0px;
+        z-index: 0;
+    }
+
+    .heroRightReveal.rightCol::after{
+        min-width:25%;
+    }
+
+    .step{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .step h3.accent{
+        padding:0px 1rem;
+    }
 
     .mainHeader{
         min-height:50px;
@@ -811,6 +829,7 @@ z-index:5;
     .leftCol{
         padding-top:3rem;
     }
+
     .logoSection{
         margin: .5rem auto;
     }
