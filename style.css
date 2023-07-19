@@ -698,17 +698,21 @@ z-index:5;
     }
 
     .menu-caret::after {
-        content: '>';
+        content: url(./Assets/Images/caretRight.svg);
+        width:1rem;
         transition: transform 0.3s;
         position:absolute;
         bottom:0;
-        padding-left:10px;
-        right:0;
-        transform: translate(-30%, -60%);
+        right:10px;
+        transform: translate(-30%, -35%);
+    }
+
+    .menu-item.menu-caret{
+        padding-right:40px;
     }
 
     .menu-caret.rotate::after {
-        transform: translateY(-.9rem) rotate(90deg);
+        transform: translate(-.3rem, -.5rem) rotate(90deg);
     }
 
     .nested-list.visible {
