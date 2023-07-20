@@ -27,6 +27,12 @@ body{
     font-family: "Archivo", product sans, sans-serif, helvetica, arial;
 }
 
+/*Check this out*/
+.mobileMenuBody, .mobileMenuBody > *{
+ display: none;
+}
+
+
 .section.headerNav{
     padding:2% 10%;
 }
@@ -1005,7 +1011,7 @@ z-index:5;
     }
 
     .mobileMenuBody.active{
-        position: absolute;
+        position:fixed;
         top:0;
         left:0;
         background-color: rgba(15, 10, 1, 0.459);
