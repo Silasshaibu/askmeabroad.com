@@ -46,11 +46,8 @@ padding-top:20vh;
     top:0;
     width: 100%;
     padding:10px 0px;
-    /* border:1px solid red; */
     min-height: 50px;
-    /* background-color: orange; */
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .MainMenu.left{
@@ -191,6 +188,15 @@ header div:nth-child(3){
     display: flex;
     height:var(--varHeight);
     margin:0 auto;
+}
+
+
+
+.mobileMenuBody{
+    width:0%;
+    z-index:0;
+    display: none;
+
 }
 
 .mobileNav{
@@ -997,6 +1003,72 @@ z-index:5;
     .mainHeader{
         display: none;
     }
+
+    .mobileMenuBody.active{
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: rgba(15, 10, 1, 0.459);
+        height: 100vh;
+        width:100%;
+        z-index:3;
+        display: block;
+    }
+
+    .mobileMenuBody::after{
+
+    }
+
+    .mobileMenuCloseBtn{
+        position: absolute;
+        padding:10px;
+        background-color: white;
+        right:47%;
+        top:1rem;
+        width: 2rem;
+        display: grid;
+        aspect-ratio: 1/1;
+        place-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index:3;
+    }
+
+    .menu{
+        background-color: pink;
+        display: block;
+        position: relative;
+        width:50%;
+        height: 100vh;
+        border:1px solid blue;
+    }
+
+    .menu-item{
+        border:.5px solid black;
+        line-height: 2rem;
+    }
+
+    .nested-list{
+        position: relative !important;
+        display: block;
+        padding:0;
+        top:0px;
+    }
+
+    .menu-item.menu-caret{
+        position: relative;
+        padding:0;
+    }
+
+    .menu-item.menu-caret::after{
+        position:absolute;
+        top:50%;
+        padding:0 !important;
+        right:5%;
+        transform:translateY(-50%);
+    }
+
+
 
     .logoSection{
         margin: 0;

@@ -45,6 +45,21 @@ setInterval(changeBackgroundColor, .1 * 30 * 1000);
 //on click on close button
 
 
+function closeMobileMenuSection(){
+const mobileCloseBtn = document.getElementById("CloseBtnMobileMenu");
+const mobileMenu = document.querySelector('.mobileMenuBody');
+mobileMenu.style.display = 'none';
+}
+
+const mobileMenuBtn = document.getElementById('hamburgerMobileMenu');
+
+
+const mobileMenuBody = document.querySelector('.mobileMenuBody');
+mobileMenuBtn.addEventListener('click', ()=>{
+  console.log('openMobileSection');
+  mobileMenuBody.style.display = 'block';
+})
+
 const body = document.getElementById('body');
 const mobileMenuButton = document.getElementById('mobileNavCloseBtn');
 const mobileMenuDropDownNav = document.getElementById('mobilemenuDropDownNav');
@@ -59,8 +74,6 @@ body.style.transform = 'translateX(0%)';
 const thisYear = new Date().getFullYear();
 const currentYear = document.querySelector('#currentYear');
 currentYear.innerHTML = thisYear;
-
-
 
 
 //Putting Carret Right Arrows and Nav or Ul that has nested list
