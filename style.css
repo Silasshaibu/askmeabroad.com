@@ -56,6 +56,25 @@ padding-top:20vh;
 .MainMenu.left{
 justify-content: space-between;
 padding-top:15px;
+z-index: 1;
+}
+
+ul.nested-list li:not(:last-child){
+border-bottom:1px solid rgba(128, 128, 128, 0.377);
+}
+
+ul.nested-list li{
+border-radius: 0;
+margin:0;
+width: 12rem;
+min-height:20px;
+height:60px;
+display: grid;
+align-items: center;
+}
+
+ul.nested-list li:hover {
+background-color: #fafafa;
 }
 
 .logoSection{
