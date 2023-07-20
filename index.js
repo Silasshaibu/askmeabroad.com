@@ -61,6 +61,8 @@ const currentYear = document.querySelector('#currentYear');
 currentYear.innerHTML = thisYear;
 
 
+
+
 //Putting Carret Right Arrows and Nav or Ul that has nested list
 const menuItems = document.querySelectorAll('.menu-item');
 
@@ -96,6 +98,15 @@ menuItems.forEach((menuItem) => {
       });
     }
   });
+
+
+  //Opens a popup window for reaching the whatsapp enduser when the studentUser clicks on "ChatWithUsButton" inside the whatsappChatPopUpBox
+  function redirectToWhatsappAPI(){
+    var popupWindow = window.open( "https://api.whatsapp.com/send/?phone=918053064652&text=I+have+a+few+questions%2C+Can+you+help%3F", "WhatsappConnectPopUp", "width=600, height=400");
+  }
+
+
+
 
 
 // let options = {

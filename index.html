@@ -59,10 +59,22 @@
                       </svg>
                 </div>
 
-                                      <ul class="miniMenu one">
-                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pricing</a></li>
+                <ul class="miniMenu one">
+                    <li class="menu-item"><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li class="menu-item"><a href="#">Our Services</a>
+                        <ul class="nested-list">
+                            <li><a href="#">IELTS/PTE Training</a>
+                            </li>
+                            <li><a href="#">University Enrollment</a>
+                            </li>
+                        </ul></li>
+                    <li class="menu-item"><a href="#">Pricing</a>
+                        <ul class="nested-list">
+                            <li><a href="#">IELTS/PTE Online Class Package</a>
+                            </li>
+                            <li><a href="#">University Enrollment Package</a>
+                            </li>
+                        </ul></li>
                 </ul>
             </div>
         </div>
@@ -381,8 +393,8 @@
             </div>
             <div id="whatsappchatBoxPopUp" class="whatsappchatBoxPopUp">
                 <div><h4>Askmeabroad.com</h4></div>
-                <div><p class="respButton chat">How can I help you?</p></div>
-                <div><p class="respButton"><span> E </span>Chat With Us</p></div>
+                <div><p class="respButton chat" >How can I help you?</p></div>
+                <div><p onclick="redirectToWhatsappAPI()" class="respButton"><span> E </span>Chat With Us</p></div>
                 <svg onclick="exitWhatsappChatBox()" class="whatsappcloseBtn hero_def_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
