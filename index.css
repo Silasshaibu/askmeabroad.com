@@ -81,6 +81,7 @@
 
     .whatsapp:hover .callout{
         display:block;
+        width:15ch;
     }
 
     .whatsappchatBoxPopUp div:nth-child(3){

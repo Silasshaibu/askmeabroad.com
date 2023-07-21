@@ -845,6 +845,11 @@ button:hover {
     width: 2rem;
 }
 
+.mobileMenuBoard {
+    display: none;
+}
+
+
 /* TABLET SCREEN */
 @media (max-width:1080px) {
     ul a {
@@ -1019,12 +1024,19 @@ button:hover {
     }
 }
 
-.mobileMenuBoard {
-    display: none;
-}
+
 
 /*MOBILE SCREEN*/
 @media (max-width:768px) {
+
+    :root{
+        --mobileMenuBoardLeftWidth:60%;
+    }
+
+    .mobileMenuBoard{
+        display: none;
+    }
+
     .mainHeader {
         display: none;
     }
@@ -1034,14 +1046,20 @@ button:hover {
         cursor: pointer;
     }
 
-
     .hero_def_icon.mobileMenuCloseIcon {
         position: absolute;
         top: 1rem;
-        right: 40%;
+        right: calc(100% - var(--mobileMenuBoardLeftWidth) - 4rem);
         border-radius: 50%;
         background-color: white;
         cursor: pointer;
+    }
+
+    .mobileMenuBoardLeft {
+        left: 0;
+        width: var(--mobileMenuBoardLeftWidth);
+        background-color: rgb(241, 239, 239);
+        height: 100%;
     }
 
     .nested-list {
@@ -1049,13 +1067,11 @@ button:hover {
         background-color: red;
     }
 
-
     .SecOne li:hover {
         background-color: grey;
     }
 
     .mobileMenuBoard {
-        display: block;
         height: 100vh;
         position: fixed;
         width: 100vw;
@@ -1068,15 +1084,6 @@ button:hover {
         min-height: 50px;
         place-items: center;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-
-
-    .mobileMenuBoardLeft {
-        left: 0;
-        width: 50%;
-        background-color: rgb(241, 239, 239);
-        height: 100%;
     }
 
     .logoSection {

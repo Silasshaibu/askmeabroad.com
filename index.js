@@ -7,11 +7,13 @@ const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
 function openWhatsappChatBox(){
   whatsappPopUpChatBox.style.display ='grid';
 }
+
 //Closing the whatsappPopUpChat with the whatsapp Close btn
 function exitWhatsappChatBox(){
   whatsappPopUpChatBox.style.display ='none';
 }
 
+//Closing the RobotCallout with the X btn closest to it
 function closeBtnRobotCallOut(){
   const robotCallout = document.querySelector('.robotCallout');
 
@@ -41,30 +43,36 @@ changeBackgroundColor();
 // Set an interval to call the function every .1 minutes
 setInterval(changeBackgroundColor, .1 * 30 * 1000);
 
-//on hover show, close button on robot callout
-//on click on close button
+
+//Mobile Button Close, Open, MobileMenuBoard actions
 const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
-const mobileMenuSection = document.getElementById('mobileMenuSection');
+const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
+const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
 
 mobileMenuOpenBtn.addEventListener('click', ()=>{
-  mobileMenuSection.style.display ='block';
-})
+  mobileMenuBoard.style.display ='block';
+});
 
-function closeMobileMenuSection(){
-const mobileMenu = document.querySelector('.mobileMenuBody');
-mobileMenu.style.display = 'none';
+mobileMenuCloseBtn.addEventListener('click', ()=>{
+  mobileMenuBoard.style.display ='none';
+});
+
+
+//Always remove the mobileMenuBoard When  The WindowWidth is greater than 600px
+function updateMobileMenuDisplay() {
+  const mobileMenuBoard = document.querySelector(".mobileMenuBoard");
+  const windowWidth = window.innerWidth;
+  //Checks if windows screen is greater than 768
+  if (windowWidth > 768) {
+    mobileMenuBoard.style.display = "none";
+  }
 }
 
-function mobileMenuOpen(){
-  mobileMenuDropDownNav.style.display ='block';
-  body.style.transform = 'translateX(0%)';
-}
+// Call the function on initial page load
+updateMobileMenuDisplay();
 
-
-
-const mobileMenuCloseBtn = document.getElementById('mobileNavCloseBtn');
-const mobileMenuDropDownNav = document.getElementById('mobilemenuDropDownNav');
-
+// Call the function whenever the window is resized
+window.addEventListener("resize", updateMobileMenuDisplay);
 
 
 
