@@ -1003,6 +1003,9 @@ z-index:5;
         }
     }
 
+    .mobileMenuBoard{
+        display: none;
+    }
 
 /*MOBILE SCREEN*/
 @media (max-width:768px){
@@ -1010,71 +1013,55 @@ z-index:5;
         display: none;
     }
 
-    .mobileMenuBody.active{
-        position:fixed;
-        top:0;
-        left:0;
-        background-color: rgba(15, 10, 1, 0.459);
-        height: 100vh;
-        width:100%;
-        z-index:3;
-        display: block;
-    }
-
-    .mobileMenuBody::after{
-
-    }
-
-    .mobileMenuCloseBtn{
-        position: absolute;
-        padding:10px;
-        background-color: white;
-        right:47%;
-        top:1rem;
-        width: 2rem;
-        display: grid;
-        aspect-ratio: 1/1;
-        place-items: center;
-        border-radius: 50%;
+    .SecOne li{
+        padding:1.5rem .75rem;
         cursor: pointer;
-        z-index:3;
     }
 
-    .menu{
-        background-color: pink;
-        display: block;
-        position: relative;
-        width:50%;
-        height: 100vh;
-        border:1px solid blue;
-    }
 
-    .menu-item{
-        border:.5px solid black;
-        line-height: 2rem;
+    .hero_def_icon.mobileMenuCloseIcon{
+        position: absolute;
+        top:1rem;
+        right:40%;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
     }
 
     .nested-list{
-        position: relative !important;
-        display: block;
-        padding:0;
-        top:0px;
-    }
-
-    .menu-item.menu-caret{
-        position: relative;
-        padding:0;
-    }
-
-    .menu-item.menu-caret::after{
-        position:absolute;
-        top:50%;
         padding:0 !important;
-        right:5%;
-        transform:translateY(-50%);
+        background-color: red;
     }
 
 
+    .SecOne li:hover{
+        background-color: grey;
+    }
+
+    .mobileMenuBoard{
+        display: block;
+        height:100vh;
+        position:fixed;
+        width: 100vw;
+        background-color: #35343431;
+        z-index:2;
+    }
+
+    .mobileMenuBoardLeft .CTA--Contact{
+        display: grid;
+        min-height:50px;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .mobileMenuBoardLeft{
+        left:0;
+        width:50%;
+        background-color: rgb(241, 239, 239);
+        height: 100%;
+    }
 
     .logoSection{
         margin: 0;

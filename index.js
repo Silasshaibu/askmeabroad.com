@@ -43,31 +43,29 @@ setInterval(changeBackgroundColor, .1 * 30 * 1000);
 
 //on hover show, close button on robot callout
 //on click on close button
+const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
+const mobileMenuSection = document.getElementById('mobileMenuSection');
 
+mobileMenuOpenBtn.addEventListener('click', ()=>{
+  mobileMenuSection.style.display ='block';
+})
 
 function closeMobileMenuSection(){
-const mobileCloseBtn = document.getElementById("CloseBtnMobileMenu");
 const mobileMenu = document.querySelector('.mobileMenuBody');
 mobileMenu.style.display = 'none';
 }
 
-const mobileMenuBtn = document.getElementById('hamburgerMobileMenu');
+function mobileMenuOpen(){
+  mobileMenuDropDownNav.style.display ='block';
+  body.style.transform = 'translateX(0%)';
+}
 
 
-const mobileMenuBody = document.querySelector('.mobileMenuBody');
-mobileMenuBtn.addEventListener('click', ()=>{
-  console.log('openMobileSection');
-  mobileMenuBody.style.display = 'block';
-})
 
-const body = document.getElementById('body');
-const mobileMenuButton = document.getElementById('mobileNavCloseBtn');
+const mobileMenuCloseBtn = document.getElementById('mobileNavCloseBtn');
 const mobileMenuDropDownNav = document.getElementById('mobilemenuDropDownNav');
 
-function mobileMenuOpen(){
-mobileMenuDropDownNav.style.display ='block';
-body.style.transform = 'translateX(0%)';
-}
+
 
 
 //Setting the copyright year to this present year
