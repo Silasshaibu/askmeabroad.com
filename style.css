@@ -1055,6 +1055,19 @@ button:hover {
         cursor: pointer;
     }
 
+    /*Absoluting for mobile menu*/
+    .menu-item.menu-caret svg{
+        position: absolute;
+        top:0;
+        right:0;
+        transform:translateY(20%);
+    }
+
+    .menu-item.menu-caret li.sub-item{
+        border:1px solid black;
+        padding:1rem 0 !important;
+    }
+
     .mobileMenuBoardLeft {
         left: 0;
         width: var(--mobileMenuBoardLeftWidth);
