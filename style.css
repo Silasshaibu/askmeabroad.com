@@ -819,12 +819,13 @@ footer a:hover {
 }
 
 button {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     max-width: fit-content;
     transition: all 300ms;
 }
 
 button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .mainHeader {
