@@ -1043,8 +1043,12 @@ button:hover {
 
     .SecOne {
         cursor: pointer;
-        border:1px solid black;
-        /* padding:0rem 1rem; */
+
+    }
+
+    .mobilemenu-item, .mobilemenu-item.hasNestedList{
+        background-color: white;
+        border-bottom: 1px solid rgb(219, 219, 219);
     }
 
     .SecOne li{
@@ -1052,14 +1056,13 @@ button:hover {
     }
 
     .mobilemenu-item.hasNestedList{
-        background-color: rgba(255, 0, 0, 0.418) ;
         position: relative;
     }
 
     .mobilemenu-item.hasNestedList li{
         margin-left:20px;
         padding:.25rem 1rem;
-        border-left:1px solid red;
+        border-left:1px solid var(--global-color-primary);
     }
 
     .Nested{
@@ -1090,6 +1093,9 @@ button:hover {
         background-color: white;
         cursor: pointer;
     }
+    span.NotALink{
+        cursor: default;
+    }
 
     .mobileMenuBoardLeft {
         left: 0;
@@ -1099,13 +1105,17 @@ button:hover {
         height:200vh;
     }
 
-    .nested-list {
-        padding: 0 !important;
-        background-color: red;
+    .Nested.active li:hover, .sub-item:hover a{
+        background-color: var(--global-color-primary-special);
+        color:white;
+    }
+
+    .sub-item a:hover{
+        color:white !important;
     }
 
     .SecOne li:hover {
-        background-color: grey;
+        background-color: rgb(240, 240, 240);
     }
 
     .mobileMenuBoard {

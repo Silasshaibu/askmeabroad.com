@@ -139,7 +139,6 @@ lists.forEach((list)=>{
     list.addEventListener('click', ()=>{
       svgCaretArrow.classList.toggle('active');
       nestUlChild.classList.toggle('active');
-      console.log(nestUlChild);
     })
   }
 });
