@@ -1041,9 +1041,45 @@ button:hover {
         display: none;
     }
 
-    .SecOne li {
-        padding: 1.5rem .75rem;
+    .SecOne {
         cursor: pointer;
+        border:1px solid black;
+        /* padding:0rem 1rem; */
+    }
+
+    .SecOne li{
+        padding:1rem 1rem;
+    }
+
+    .mobilemenu-item.hasNestedList{
+        background-color: rgba(255, 0, 0, 0.418) ;
+        position: relative;
+    }
+
+    .mobilemenu-item.hasNestedList li{
+        margin-left:20px;
+        padding:.25rem 1rem;
+        border-left:1px solid red;
+    }
+
+    .Nested{
+        display:none;
+    }
+
+    .Nested.active{
+        display: block;
+    }
+
+    svg.hero_def_icon.caret{
+        float:right;
+        position: absolute;
+        top:0;
+        right:.5rem;
+        transition: transform 300ms;
+    }
+
+    .hero_def_icon.caret.active{
+        transform: rotate(90deg);
     }
 
     .hero_def_icon.mobileMenuCloseIcon {
@@ -1055,24 +1091,12 @@ button:hover {
         cursor: pointer;
     }
 
-    /*Absoluting for mobile menu*/
-    .menu-item.menu-caret svg{
-        position: absolute;
-        top:0;
-        right:0;
-        transform:translateY(20%);
-    }
-
-    .menu-item.menu-caret li.sub-item{
-        border:1px solid black;
-        padding:1rem 0 !important;
-    }
-
     .mobileMenuBoardLeft {
         left: 0;
         width: var(--mobileMenuBoardLeftWidth);
         background-color: rgb(241, 239, 239);
-        height: 100%;
+        min-height: 100vh;
+        height:200vh;
     }
 
     .nested-list {

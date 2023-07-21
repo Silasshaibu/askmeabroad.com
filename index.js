@@ -119,6 +119,7 @@ menuItems.forEach((menuItem) => {
   });
 
 
+
   //Opens a popup window for reaching the whatsapp enduser when the studentUser clicks on "ChatWithUsButton" inside the whatsappChatPopUpBox
   function redirectToWhatsappAPI(){
     var popupWindow = window.open( "https://api.whatsapp.com/send/?phone=918053064652&text=I+have+a+few+questions%2C+Can+you+help%3F", "WhatsappConnectPopUp", "width=600, height=400");
@@ -126,6 +127,22 @@ menuItems.forEach((menuItem) => {
 
 
 
+const lists = document.querySelectorAll('.hasNestedList');
+
+lists.forEach((list)=>{
+  if(list.classList.contains("hasNestedList")){
+    const nestUlChild = list.querySelector('ul.Nested');
+
+    const svgCaretArrow = list.querySelector('.hero_def_icon.caret');
+
+
+    list.addEventListener('click', ()=>{
+      svgCaretArrow.classList.toggle('active');
+      nestUlChild.classList.toggle('active');
+      console.log(nestUlChild);
+    })
+  }
+});
 
 
 
