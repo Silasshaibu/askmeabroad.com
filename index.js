@@ -19,41 +19,16 @@ function closeBtnRobotCallOut(){
   robotCallout.style.display='none';
 }
 
-// //Change the color of the whatsapp Contact Icon
-// function changeBackgroundColor() {
-//   let colorDiv = document.getElementById("whatsappIcon");
-//   let colors = ["#25D366", "#8913C6"]; // Add more colors as you want
-//   let currentColor = colorDiv.style.backgroundColor;
-
-//   // Find the index of the current color in the array
-//   let currentIndex = colors.indexOf(currentColor);
-
-//   // Calculate the index of the next color
-//   let nextIndex = (currentIndex + 1) % colors.length;
-
-//   // Update the background color of the div
-//   colorDiv.style.backgroundColor = colors[nextIndex];
-// }
-
-// // Call the function initially
-// changeBackgroundColor();
-
-// // Set an interval to call the function every .1 minutes
-// setInterval(changeBackgroundColor, .1 * 30 * 1000);
-
+const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
+  const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
+  const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
 
 //Mobile Button Close, Open, MobileMenuBoard actions
 mobileMenuOpenBtn.addEventListener('click', ()=>{
-  const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
-  const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
-  const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
   mobileMenuBoard.style.display ='block';
 });
 
 mobileMenuCloseBtn.addEventListener('click', ()=>{
-  const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
-  const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
-  const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
   mobileMenuBoard.style.display ='none';
 });
 
@@ -117,7 +92,6 @@ menuItems.forEach((menuItem) => {
     }
   });
 
-  //Opens a popup window for reaching the whatsapp enduser when the studentUser clicks on "ChatWithUsButton" inside the whatsappChatPopUpBox
   function redirectToWhatsappAPI(){
     var popupWindow = window.open( "https://api.whatsapp.com/send/?phone=918053064652&text=I+have+a+few+questions%2C+Can+you+help%3F", "WhatsappConnectPopUp", "width=600, height=400");
   }
@@ -136,20 +110,6 @@ lists.forEach((list)=>{
     })
   }
 });
-
-// let options = {
-//   root:null,
-//   rootMargin: "0px",
-//   threshold: 1.0,
-// };
-
-// let observer = new IntersectionObserver(function(){
-
-// }, options);
-
-
-
-
 
 
 
