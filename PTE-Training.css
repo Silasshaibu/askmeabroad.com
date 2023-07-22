@@ -20,12 +20,32 @@
         }
 
         .grid.oneByFour.typeOne{
+            position: relative;
             gap:2rem;
-            border-radius: 1rem;
-            background-color: rgba(255, 0, 0, 0.329);
             margin:0 5%;
+            border-radius: 1rem;
             grid-template-columns: repeat(4, 1fr);
+            background-color: rgba(126, 24, 146, 0.466);
         }
+
+        .grid.oneByFour.typeOne::before{
+            content: '';
+            position: absolute;
+            border-radius: 1rem;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./Assets/Images/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working-1.jpg);
+            background-position: center center;
+            background-repeat: none;
+            background-color: rgba(126, 24, 146, 0.096);
+            background-blend-mode: multiply;
+            z-index: -1;
+            opacity: .4;
+        }
+
+
 
         .typeOne .grid-item{
             border-radius: 0;
@@ -44,9 +64,9 @@
             }
 
             .grid.oneByFour.typeOne{
+
                 gap:0rem;
                 border-radius: 1rem;
-                background-color: rgba(255, 0, 0, 0.329);
                 margin:0 5%;
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -58,13 +78,6 @@
                 aspect-ratio: 4/1;
             }
 
-            /* .typeOne .grid-item h3{
-                align-self:end;
-            }
-
-            .typeOne .grid-item p{
-                align-self:start;
-            } */
         }
 
         @media (max-width:768px) {
