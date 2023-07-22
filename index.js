@@ -1,59 +1,59 @@
-const whatsappChatIcon = document.getElementById('whatsappIcon');
-
-const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
-
-
 //Opening the whatsappPopUpChat with the whatsapp Close btn
 function openWhatsappChatBox(){
+  const whatsappChatIcon = document.getElementById('whatsappIcon');
+  const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
   whatsappPopUpChatBox.style.display ='grid';
 }
 
 //Closing the whatsappPopUpChat with the whatsapp Close btn
 function exitWhatsappChatBox(){
+  const whatsappChatIcon = document.getElementById('whatsappIcon');
+  const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
   whatsappPopUpChatBox.style.display ='none';
 }
 
 //Closing the RobotCallout with the X btn closest to it
 function closeBtnRobotCallOut(){
   const robotCallout = document.querySelector('.robotCallout');
-
   const robotCallOutExitBtn = document.querySelector('.closeBtnRobotCallOut');
   robotCallout.style.display='none';
 }
 
-//Change the color of the whatsapp Contact Icon
-function changeBackgroundColor() {
-  let colorDiv = document.getElementById("whatsappIcon");
-  let colors = ["#25D366", "#8913C6"]; // Add more colors as you want
-  let currentColor = colorDiv.style.backgroundColor;
+// //Change the color of the whatsapp Contact Icon
+// function changeBackgroundColor() {
+//   let colorDiv = document.getElementById("whatsappIcon");
+//   let colors = ["#25D366", "#8913C6"]; // Add more colors as you want
+//   let currentColor = colorDiv.style.backgroundColor;
 
-  // Find the index of the current color in the array
-  let currentIndex = colors.indexOf(currentColor);
+//   // Find the index of the current color in the array
+//   let currentIndex = colors.indexOf(currentColor);
 
-  // Calculate the index of the next color
-  let nextIndex = (currentIndex + 1) % colors.length;
+//   // Calculate the index of the next color
+//   let nextIndex = (currentIndex + 1) % colors.length;
 
-  // Update the background color of the div
-  colorDiv.style.backgroundColor = colors[nextIndex];
-}
+//   // Update the background color of the div
+//   colorDiv.style.backgroundColor = colors[nextIndex];
+// }
 
-// Call the function initially
-changeBackgroundColor();
+// // Call the function initially
+// changeBackgroundColor();
 
-// Set an interval to call the function every .1 minutes
-setInterval(changeBackgroundColor, .1 * 30 * 1000);
+// // Set an interval to call the function every .1 minutes
+// setInterval(changeBackgroundColor, .1 * 30 * 1000);
 
 
 //Mobile Button Close, Open, MobileMenuBoard actions
-const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
-const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
-const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
-
 mobileMenuOpenBtn.addEventListener('click', ()=>{
+  const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
+  const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
+  const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
   mobileMenuBoard.style.display ='block';
 });
 
 mobileMenuCloseBtn.addEventListener('click', ()=>{
+  const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
+  const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
+  const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
   mobileMenuBoard.style.display ='none';
 });
 
@@ -125,8 +125,6 @@ menuItems.forEach((menuItem) => {
     var popupWindow = window.open( "https://api.whatsapp.com/send/?phone=918053064652&text=I+have+a+few+questions%2C+Can+you+help%3F", "WhatsappConnectPopUp", "width=600, height=400");
   }
 
-
-
 const lists = document.querySelectorAll('.hasNestedList');
 
 lists.forEach((list)=>{
@@ -135,17 +133,12 @@ lists.forEach((list)=>{
 
     const svgCaretArrow = list.querySelector('.hero_def_icon.caret');
 
-
     list.addEventListener('click', ()=>{
       svgCaretArrow.classList.toggle('active');
       nestUlChild.classList.toggle('active');
     })
   }
 });
-
-
-
-
 
 // let options = {
 //   root:null,
