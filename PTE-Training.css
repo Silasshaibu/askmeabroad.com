@@ -45,8 +45,6 @@
             opacity: .4;
         }
 
-
-
         .typeOne .grid-item{
             border-radius: 0;
             background-color: transparent;
@@ -55,6 +53,12 @@
 
         div.grid-item p{
             height: 4rem; /*Keep lineHeight so as to maintain the aesthetic of the layout*/
+        }
+
+        .sectionCentered{
+            display: grid;
+            place-items:center;
+            padding:4% 4%;
         }
 
         @media (max-width:1024px) {
