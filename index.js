@@ -23,14 +23,7 @@ const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
   const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
   const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
 
-//Mobile Button Close, Open, MobileMenuBoard actions
-mobileMenuOpenBtn.addEventListener('click', ()=>{
-  mobileMenuBoard.style.display ='block';
-});
 
-mobileMenuCloseBtn.addEventListener('click', ()=>{
-  mobileMenuBoard.style.display ='none';
-});
 
 
 //Always remove the mobileMenuBoard When  The WindowWidth is greater than 600px
@@ -111,6 +104,15 @@ lists.forEach((list)=>{
   }
 });
 
+
+//Mobile Button Close, Open, MobileMenuBoard actions
+mobileMenuOpenBtn.addEventListener('click', ()=>{
+  mobileMenuBoard.style.display ='block';
+});
+
+mobileMenuCloseBtn.addEventListener('click', ()=>{
+  mobileMenuBoard.style.display ='none';
+});
 
 
 
