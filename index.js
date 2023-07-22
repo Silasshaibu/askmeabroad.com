@@ -75,7 +75,6 @@ updateMobileMenuDisplay();
 window.addEventListener("resize", updateMobileMenuDisplay);
 
 
-
 //Setting the copyright year to this present year
 const thisYear = new Date().getFullYear();
 const currentYear = document.querySelector('#currentYear');
@@ -117,8 +116,6 @@ menuItems.forEach((menuItem) => {
       });
     }
   });
-
-
 
   //Opens a popup window for reaching the whatsapp enduser when the studentUser clicks on "ChatWithUsButton" inside the whatsappChatPopUpBox
   function redirectToWhatsappAPI(){
