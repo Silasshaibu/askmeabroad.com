@@ -1,0 +1,73 @@
+:root{
+
+}
+
+        .grid.oneByFour{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:2rem;
+            padding:5%;
+        }
+
+        .grid-item{
+            border-radius: 1rem;
+            aspect-ratio: 1.5/1;
+            color:var(--global-color-white);
+            display: grid;
+
+            place-items: center;
+            background-color: var(--global-color-primary);
+        }
+
+        .grid.oneByFour.typeOne{
+            gap:2rem;
+            border-radius: 1rem;
+            background-color: rgba(255, 0, 0, 0.329);
+            margin:0 5%;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .typeOne .grid-item{
+            border-radius: 0;
+            background-color: transparent;
+            text-align: center;
+        }
+
+        div.grid-item p{
+            height: 4rem; /*Keep lineHeight so as to maintain the aesthetic of the layout*/
+        }
+
+        @media (max-width:1024px) {
+            .grid.oneByFour{
+            grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .grid.oneByFour.typeOne{
+                gap:0rem;
+                border-radius: 1rem;
+                background-color: rgba(255, 0, 0, 0.329);
+                margin:0 5%;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .typeOne .grid-item{
+                border-radius: 0;
+                background-color: transparent;
+                text-align: center;
+                aspect-ratio: 4/1;
+            }
+
+            /* .typeOne .grid-item h3{
+                align-self:end;
+            }
+
+            .typeOne .grid-item p{
+                align-self:start;
+            } */
+        }
+
+        @media (max-width:768px) {
+
+
+        }
