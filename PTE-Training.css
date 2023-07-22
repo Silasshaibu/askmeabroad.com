@@ -58,7 +58,15 @@
         .sectionCentered{
             display: grid;
             place-items:center;
-            padding:4% 4%;
+            padding:1% 4%;
+        }
+
+        .sectionCentered.button{
+            padding:5% 4%;
+        }
+
+        .default-section.first{
+            padding:5% 15%;
         }
 
         @media (max-width:1024px) {
