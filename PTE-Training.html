@@ -305,9 +305,9 @@
 
     <div class="onlineClassPackage">
         <h2>IELTS/PTE ONLINE CLASSES PACKAGES</h2>
-        <div class="grid">
-            <div class="grid-item">
-                <div>
+        <div class="twoCards">
+            <div class="cardContainer">
+                <div class="card">
                     <h1>30 Days Coaching</h1>
                     <ul>
                         <li>Daily Live Interactive Classes</li>
@@ -331,11 +331,11 @@
                         <li>Extensive Test Feedback</li>
                     </ul>
                 </div>
-                <button class="primary">Enroll Now</button>
+                <button class="primary special">Enroll Now</button>
             </div>
 
-            <div class="grid-item">
-                <div>
+            <div class="cardContainer">
+                <div class="card">
                     <h1>30 Days Coaching</h1>
                     <ul>
                         <li>Daily Live Interactive Classes</li>
@@ -359,8 +359,7 @@
                         <li>Extensive Test Feedback</li>
                     </ul>
                 </div>
-                <button class="primary">Enroll Now</button>
-
+                <button class="primary special">Enroll Now</button>
             </div>
         </div>
     </div>
@@ -375,20 +374,61 @@
     <style>
         .onlineClassPackage{
             text-align: center;
-            padding:5%;
+            padding:5% 15%;
         }
 
-        .onlineClassPackage .grid-item{
-            background-color: black;
-            padding:0 !important;
-            margin: 0 !important;
-            width: 100%;
+        .twoCards{
+            display: grid;
+            gap:2rem;
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        .onlineClassPackage .grid-item div{
-            margin: 2rem 0;
-            border-radius: .5rem;
-            background-color: red;
+        .card{
+            background-color: purple;
+            border-radius: 1rem;
+            padding:2rem 1rem;
+            margin:2rem 0rem;
+            color:white;
+        }
+
+        .card *{
+            line-height: 1.5rem;
+        }
+
+        .card ul, .card h1{
+            padding:1rem 0;
+        }
+
+        .card ul:nth-child(odd){
+            border:1px solid white;
+            border-left:none;
+            border-right:none;
+            margin:0 4rem;
+        }
+
+
+        @media (max-width:1024px){
+            .onlineClassPackage{
+                text-align: center;
+                padding:4%;
+            }
+        }
+
+
+        @media (max-width:768px){
+            .onlineClassPackage{
+                text-align: center;
+                padding:5%;
+            }
+
+            .twoCards{
+                gap:2rem;
+                grid-template-columns: repeat(1, 1fr);
+                }
+
+                .card ul:nth-child(odd){
+                margin:0 4rem;
+                }
         }
 
 
