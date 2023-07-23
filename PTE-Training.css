@@ -69,6 +69,34 @@
             padding:5% 15%;
         }
 
+        .section{
+            display: flex;
+            margin:5% 8%;
+            line-height: 1.5rem;
+            padding:5%;
+            background-color: purple;
+            border-radius: 1rem;
+            color:white;
+        }
+
+        .section div{
+            flex-basis: 50%;
+        }
+
+        .section div *:not(button, li){
+            padding:.5rem 0rem;
+        }
+
+
+        .section div button{
+            margin:1rem 0;
+        }
+
+        /*Set the list style for this li to an svg of circled check mark*/
+        .section div li{
+            list-style: circle;
+        }
+
         @media (max-width:1024px) {
             .grid.oneByFour{
             grid-template-columns: repeat(2, 1fr);
@@ -93,6 +121,8 @@
         }
 
         @media (max-width:768px) {
-
+            .section{
+                flex-direction: column-reverse;
+            }
 
         }
