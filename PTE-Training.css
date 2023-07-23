@@ -112,6 +112,75 @@
             list-style: circle;
         }
 
+        p{
+            line-height: 2rem;
+        }
+
+        .onlineClassPackage{
+            text-align: center;
+            padding:5% 15%;
+        }
+
+        .twoCards{
+            display: grid;
+            gap:2rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .card{
+            background-color: purple;
+            border-radius: 1rem;
+            padding:2rem 1rem;
+            margin:2rem 0rem;
+            color:white;
+        }
+
+        .card *{
+            line-height: 1.5rem;
+        }
+
+        .card ul, .card h1{
+            padding:1rem 0;
+        }
+
+        .card ul:nth-child(odd){
+            border:1px solid white;
+            border-left:none;
+            border-right:none;
+            margin:0 4rem;
+        }
+
+        .groupCoachingSection{
+            padding:5%;
+            background-color: purple;
+            display: flex;
+            color:white;
+            justify-content: space-between;
+        }
+
+        .item1{
+            color:black;
+        }
+
+        .groupCoachingSection div{
+            flex-basis:48%;
+        }
+
+        .subCardsLayout{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:1rem;
+        }
+
+        .item1{
+            padding:1rem;
+            line-height: 2rem;
+            background-color: white;
+        }
+
+
+
+
         /*TABLET DEVICES*/
         @media (max-width:1024px) {
             .grid.oneByFour{
@@ -137,12 +206,40 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .onlineClassPackage{
+                text-align: center;
+                padding:4%;
+            }
+
         }
 
         /*MOBILE DEVICES*/
         @media (max-width:768px) {
             .section{
                 flex-direction: column-reverse;
+            }
+
+            .onlineClassPackage{
+                text-align: center;
+                padding:5%;
+            }
+
+            .twoCards{
+                gap:2rem;
+                grid-template-columns: repeat(1, 1fr);
+                }
+
+            .card ul:nth-child(odd){
+                margin:0 4rem;
+                }
+
+            .groupCoachingSection{
+                padding:5%;
+                background-color: purple;
+                display: flex;
+                flex-direction: column;
+                color:white;
+                justify-content: space-between;
             }
 
 
