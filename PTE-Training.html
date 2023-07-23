@@ -364,6 +364,28 @@
         </div>
     </div>
 
+    <div class="groupCoachingSection">
+        <div>
+            <h1>Why IELTS/PTE online group coaching</h1>
+            <p>Our online courses are structured and geared toward self-study. Aspiring IELTS/PTE and PTE candidates can use these courses to practice and study at their own pace. The curriculum is designed to provide students with the most preparation possible for the IELTS/PTE test. There is a lot of time spent working on skills like reading, writing, speaking, and listening as part of this program. Is there anything more you want to do? Improve your score on the IELTS/PTE by using our free online course! Learn from the very best in the field of IELTS/PTE. Classroom, self-learning video, and online IELTS/PTE training are all available from us, as well as individual and group coaching. You have a variety of options to pick from. As a result, our trainers ensure that the sessions are highly participatory. The candidate may benefit from this, and their performance may improve.</p>
+        </div>
+        <div class="subCardsLayout">
+            <div class="item1">
+                E
+            </div>
+            <div class="item1">
+                E
+            </div>
+            <div class="item1">
+                E
+            </div>
+            <div class="item1">
+                E
+            </div>
+        </div>
+
+    </div>
+
      <!-- footer section is added using the footer component -->
      <footer-component></footer-component>
 </body>
@@ -406,6 +428,29 @@
             margin:0 4rem;
         }
 
+        .groupCoachingSection{
+            padding:2% 5%;
+            background-color: pink;
+            min-height: 400px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .groupCoachingSection div{
+            flex-basis:48%;
+        }
+
+        .subCardsLayout{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:1rem;
+        }
+
+        .item1{
+            border:1px solid black;
+
+        }
+
 
         @media (max-width:1024px){
             .onlineClassPackage{
@@ -430,9 +475,5 @@
                 margin:0 4rem;
                 }
         }
-
-
-
-
     </style>
 </html>
