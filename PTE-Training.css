@@ -14,7 +14,6 @@
             aspect-ratio: 1.5/1;
             color:var(--global-color-white);
             display: grid;
-
             place-items: center;
             background-color: var(--global-color-primary);
         }
@@ -87,9 +86,25 @@
             padding:.5rem 0rem;
         }
 
-
         .section div button{
             margin:1rem 0;
+        }
+
+        .thePremiumReach{
+            background-color: rgb(243, 243, 243);
+            text-align: center;
+            padding:2rem 2rem;
+        }
+
+        .thePremiumReach .grid{
+            display: grid;
+            gap:1rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .thePremiumReach .grid-item{
+            background: none;
+            border-radius: 0;
         }
 
         /*Set the list style for this li to an svg of circled check mark*/
@@ -97,14 +112,13 @@
             list-style: circle;
         }
 
+        /*TABLET DEVICES*/
         @media (max-width:1024px) {
             .grid.oneByFour{
             grid-template-columns: repeat(2, 1fr);
-
             }
 
             .grid.oneByFour.typeOne{
-
                 gap:0rem;
                 border-radius: 1rem;
                 margin:0 5%;
@@ -118,11 +132,18 @@
                 aspect-ratio: 4/1;
             }
 
+            .thePremiumReach .grid{
+                gap:1rem;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
         }
 
+        /*MOBILE DEVICES*/
         @media (max-width:768px) {
             .section{
                 flex-direction: column-reverse;
             }
+
 
         }
