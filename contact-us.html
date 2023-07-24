@@ -11,7 +11,7 @@
 <body>
     <div class="heroSection">
         <div>
-            <h6>STUDY ABROAD</h6>
+            <h6>STUDY IN YOUR DREAM COUNTRY</h6>
             <h1>We <span class="accent">Make</span> Better <span class="accent">Your</span> Study</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, doloremque dolorem nobis amet cum optio quis!</p>
             <button class="primary">ASK AN EXPERT</button>
@@ -23,29 +23,97 @@
 
     <div class="default-section first">
         <h3>
-            One Platform, Many features.
+            Contact Us
         </h3>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus nemo et dicta facere, consequatur est illo sequi adipisci commodi quia aperiam nobis omnis voluptatum exercitationem. Aut sequi ea pariatur.
+            Start your step-by-step journey of studying abroad with our experienced mentors and let our customised process guide you to reach your dream nation.
         </p>
     </div>
 
-    <div class="default-section second">
-        <div>
-            <h4>
-                Shortlist Universities and apply.
-            </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus nemo et dicta facere, consequatur est illo sequi adipisci commodi quia aperiam nobis omnis voluptatum exercitationem. Aut sequi ea pariatur.
-            </p>
-        </div>
-        <div>
-            <img src="./Assets/Images/Shortlist-Universities-and-apply-300x250.png" alt="Shortlist">
-        </div>
+    <div class="default-section contactInfo">
+        <p>Bishan Saroop Colony, Panipay 132103 Haryana, India</p>
+        <p><a href="tel:+9108053064652">Phone: +91 8053064652</a></p>
+        <p><a href="mailto:Help@askmeabroad.com">Email: Help@askmeabroad.com</a></p>
+    </div>
 
+    <div class="default-section socialMediaSection">
+       <p>Facebook Twitter Instagram Wordpress</p>
+    </div>
+
+    <div class=" contactForm">
+        <form action="" method="POST">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="text" name="name" placeholder="Your Mobile Number">
+            <select name="Courses" id="Courses-select">
+                <option value="IELTS/PTE">IELTS/PTE Training</option>
+                <option value="Reality Test">Reality Test</option>
+                <option value="Study Visa">Study Visa</option>
+                <option value="University Enrollment">University Enrollment</option>
+
+            </select>
+            <input type="email" name="email" id="aspiringUserEmail" placeholder="example@gmail.com">
+        </form>
+    </div>
+
+    <div class="mapLocationAskmeabroad">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Askmeabroad%20panipat&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="Askmeabroad panipat" aria-label="Askmeabroad panipat"></iframe>
     </div>
 
     <footer-component></footer-component>
 </body>
     <script src="./footer-component.js" type="module"></script>
+
+    <style >
+        .mapLocationAskmeabroad iframe{
+            width: 100vw;
+            min-height:400px;
+        }
+
+        .default-section-block{
+            display: block !important;
+            display: flex !important;
+            background-color: red;
+        }
+
+        .default-section.contactInfo{
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        form{
+            padding: 2rem 10%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        form input, form select{
+            width:100%;
+            padding:1rem;
+            border-radius: .2rem;
+            margin:.2rem 0rem;
+            font-size: 1rem;
+        }
+
+        .default-section.contactInfo p {
+            padding:0rem 2rem;
+        }
+
+        .mapLocationAskmeabroad{
+            margin:0% 5%;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+
+        .socialMediaSection{
+            display: block;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        @media (max-width:768px){
+            .mapLocationAskmeabroad{
+            margin:0% 5%;
+            }
+        }
+    </style>
 </html>
