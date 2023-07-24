@@ -36,9 +36,7 @@
         <p><a href="mailto:Help@askmeabroad.com">Email: Help@askmeabroad.com</a></p>
     </div>
 
-    <div class="default-section socialMediaSection">
-       <p>Facebook Twitter Instagram Wordpress</p>
-    </div>
+
 
     <div class=" contactForm">
         <form action="" method="POST">
@@ -64,6 +62,14 @@
     <script src="./footer-component.js" type="module"></script>
 
     <style >
+
+        .mapLocationAskmeabroad{
+            margin:0% 10%;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+
+
         .mapLocationAskmeabroad iframe{
             width: 100vw;
             min-height:400px;
@@ -98,16 +104,16 @@
             padding:0rem 2rem;
         }
 
-        .mapLocationAskmeabroad{
-            margin:0% 5%;
-            overflow: hidden;
-            border-radius: 1rem;
-        }
-
         .socialMediaSection{
             display: block;
             text-align: center;
             border: 1px solid black;
+        }
+
+        @media (max-width:1024px){
+            .mapLocationAskmeabroad{
+            margin:0% 5%;
+            }
         }
 
         @media (max-width:768px){

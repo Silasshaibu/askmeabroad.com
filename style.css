@@ -11,6 +11,7 @@
     --navListLiA: #353434;
     --mobileHeaderHeroHeight: 80vh;
     --boardHeight: 20rem;
+    --FooterAdvertHeight:250px;
 }
 
 
@@ -595,6 +596,10 @@ button {
     font-size: 1rem;
 }
 
+.secondaryAdBoard{
+    line-height: 2rem;
+}
+
 .single.section {
     width: 80%;
     margin: 0 auto;
@@ -603,7 +608,7 @@ button {
     grid-template-columns: auto 15ch;
     gap: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    align-items: end;
+    align-items: center;
 }
 
 .default-section.howItWorks {
@@ -695,13 +700,15 @@ button {
 footer {
     line-height: 1.5rem;
     position: relative;
-    padding-top: 20vh;
+    margin-top:var(--FooterAdvertHeight);
+        padding-top: var(--FooterAdvertHeight);
     background-color: var(--global-color-primary);
 }
 
 .single.section.secondaryAdBoard {
     position: absolute;
     top: 0;
+    height:var(--FooterAdvertHeight);
     left: 50%;
     transform: translate(-50%, -10vh);
     color: black;
@@ -1015,9 +1022,7 @@ button:hover {
         aspect-ratio: 2/1;
     }
 
-    footer {
-        padding-top: 25vh;
-    }
+
 
     .single.section.secondaryAdBoard {
         transform: translate(-50%, -12vh);
