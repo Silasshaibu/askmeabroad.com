@@ -133,13 +133,28 @@
             min-height: 100px;
             border-radius: 1rem;
             display: grid;
-            overflow: hidden;
             text-align: center;
             border:1px solid #efefef;
         }
 
         .card div:last-child{
-            padding:2rem 2rem 0rem 2rem;
+            display: flex;
+            flex-direction:column;
+        }
+
+
+
+        .card div:last-child *:not(p:last-child){
+            margin:1rem 2rem;
+        }
+
+        .card div:last-child p{
+            padding:1rem 0;
+            margin-top:2rem;
+        }
+
+        .card div:last-child p:last-child{
+            border-top:1px solid black;
         }
 
         @media (max-width:1024px){
