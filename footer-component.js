@@ -179,3 +179,19 @@ class FooterComponent extends HTMLElement{
 }
 
 customElements.define('footer-component', FooterComponent);
+
+
+//Setting the copyright year to this present year
+  function updateCopyrightYear(){
+    const thisYear = new Date().getFullYear();
+    const currentYear = document.querySelector('#currentYear');
+    if(currentYear){
+        currentYear.textContent = ` ${thisYear}`;
+    }
+  }
+  updateCopyrightYear();
+
+
+//Opening the whatsappPopUpChat with the whatsapp Close btn
+
+

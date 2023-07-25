@@ -1,4 +1,3 @@
-//Opening the whatsappPopUpChat with the whatsapp Close btn
 function openWhatsappChatBox(){
   const whatsappChatIcon = document.getElementById('whatsappIcon');
   const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
@@ -20,11 +19,8 @@ function closeBtnRobotCallOut(){
 }
 
 const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
-  const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
-  const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
-
-
-
+const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
+const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
 
 //Always remove the mobileMenuBoard When  The WindowWidth is greater than 600px
 function updateMobileMenuDisplay() {
@@ -35,7 +31,6 @@ function updateMobileMenuDisplay() {
     mobileMenuBoard.style.display = "none";
   }
 }
-
 // Call the function on initial page load
 updateMobileMenuDisplay();
 
@@ -43,15 +38,8 @@ updateMobileMenuDisplay();
 window.addEventListener("resize", updateMobileMenuDisplay);
 
 
-//Setting the copyright year to this present year
-const thisYear = new Date().getFullYear();
-const currentYear = document.querySelector('#currentYear');
-currentYear.innerHTML = thisYear;
-
-
 //Putting Carret Right Arrows and Nav or Ul that has nested list
 const menuItems = document.querySelectorAll('.menu-item');
-
 menuItems.forEach((menuItem) => {
     // Check if the menu item contains <ul> or <li> elements
     if (menuItem.querySelector('ul') || menuItem.querySelector('li')) {
@@ -85,12 +73,11 @@ menuItems.forEach((menuItem) => {
     }
   });
 
-  function redirectToWhatsappAPI(){
+function redirectToWhatsappAPI(){
     var popupWindow = window.open( "https://api.whatsapp.com/send/?phone=918053064652&text=I+have+a+few+questions%2C+Can+you+help%3F", "WhatsappConnectPopUp", "width=600, height=400");
-  }
+}
 
 const lists = document.querySelectorAll('.hasNestedList');
-
 lists.forEach((list)=>{
   if(list.classList.contains("hasNestedList")){
     const nestUlChild = list.querySelector('ul.Nested');
