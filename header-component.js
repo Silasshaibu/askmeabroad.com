@@ -94,10 +94,10 @@ class HeaderComponent extends HTMLElement{
 
     <div class="heroSection">
         <div class="leftCol">
-            <h6>STUDY IN YOUR DREAM COUNTRY</h6>
+            <h6 id="heroFirstText">STUDY IN YOUR DREAM COUNTRY</h6>
             <h1>Assisting the aspirants to fulfil their <span class="accent">Study Abroad dream</span> to shine
                 globally.</h1>
-            <p>Start your step-by-step journey of studying abroad with our experienced mentors and let our customised
+            <p id="heroModElementThird">Start your step-by-step journey of studying abroad with our experienced mentors and let our customised
                 process guide you to reach your dream nation.</p>
             <button class="primary special">ASK EXPERT NOW</button>
             <div class="MainMenu left">
@@ -147,19 +147,16 @@ class HeaderComponent extends HTMLElement{
             </div>
         </div>
     </div>
-
-    <div class="default-section first">
-        <h2>
-            <span class="accent">Get In Touch </span>With The Best Study Abroad Consultant & Educator
-        </h2>
-        <p>
-            Being India’s best and most efficient IELTS/ PTE trainer and study abroad consultant, we believe in offering
-            affordable but high-quality consultancy services, university enrollments, online IELTS/PTE preparation with
-            live classes, visa consultancy, etc. So please make us your partner in the journey of studying abroad.
-        </p>
-    </div>
-`;
+    `
     }
+
+    // // Method to update the veryFirstText content
+    // updateHeroText(heroFirstTexts) {
+    //     const heroFirstText = this.querySelector('#heroFirstText');
+    //     if (heroFirstText) {
+    //         heroFirstText.innerHTML = heroFirstTexts;
+    //     }
+    // }
 }
 
 customElements.define('header-component', HeaderComponent);
