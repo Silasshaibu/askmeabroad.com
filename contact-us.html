@@ -7,6 +7,7 @@
     <title>Contact Us | Askmeabroad</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <div class="heroSection">
@@ -38,21 +39,7 @@
 
 
 
-    <div class=" contactForm">
-        <form action="" method="POST">
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="text" name="name" placeholder="Your Mobile Number">
-            <select name="Courses" id="Courses-select">
-                <option value="IELTS/PTE">IELTS/PTE Training</option>
-                <option value="Reality Test">Reality Test</option>
-                <option value="Study Visa">Study Visa</option>
-                <option value="University Enrollment">University Enrollment</option>
-
-            </select>
-            <input type="email" name="email" id="aspiringUserEmail" placeholder="example@gmail.com">
-            <input class="button primary special" type="submit" value="Yes, I am Interested in Study Abroad">
-        </form>
-    </div>
+    <form-component></form-component>
 
     <div class="mapLocationAskmeabroad">
         <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Askmeabroad%20panipat&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="Askmeabroad panipat" aria-label="Askmeabroad panipat"></iframe>
@@ -60,6 +47,7 @@
 
     <footer-component></footer-component>
 </body>
+    <script src="./form-component.js" type="module"></script>
     <script src="./footer-component.js" type="module"></script>
     <script src="./index.js"></script>
 
@@ -71,22 +59,6 @@
             border-radius: 1rem;
         }
 
-        /*Submit Form Button Styling*/
-        input.button.primary{
-            background-color: purple;
-            color:white;
-            border:none;
-            cursor:pointer;
-            transform:translateY(.5rem);
-            transition: all 300ms;
-        }
-
-        input.button.primary:hover{
-            background-color: rgb(87, 3, 87);
-            transform:translateY(.8rem);
-        }
-
-
         .mapLocationAskmeabroad iframe{
             width: 100vw;
             min-height:400px;
@@ -96,21 +68,6 @@
             justify-content: space-between;
             text-align: center;
             padding:2% 10%;
-        }
-
-        form{
-            padding: 2rem 10%;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        form input, form select{
-            width:100%;
-            padding:1rem;
-            border-radius: .2rem;
-            margin:.2rem 0rem;
-            font-size: 1rem;
-            font-family: 'Archivo', 'Proxima Nova', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
         .default-section.contactInfo p {
