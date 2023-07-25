@@ -21,26 +21,88 @@
         </div>
     </div>
 
-    <div class="default-section first">
-        <h3>
-            One Platform, Many features.
-        </h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus nemo et dicta facere, consequatur est illo sequi adipisci commodi quia aperiam nobis omnis voluptatum exercitationem. Aut sequi ea pariatur.
-        </p>
-    </div>
+
 
     <div class="default-section second">
         <div>
-            <h4>
-                Shortlist Universities and apply.
-            </h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus nemo et dicta facere, consequatur est illo sequi adipisci commodi quia aperiam nobis omnis voluptatum exercitationem. Aut sequi ea pariatur.
+                Our expert team help you to stay updated on the Scholarships, Language Tests, Studying Abroad latest blog along with your preparation. Learn with Expertise to find updates on the Language Tests, announcements on Scholarships, and Studying Abroad.
+            </p>
+            <p>
+                Get Familiarise yourself with test types take advantage of the free support tools. And let our Experts help you get the language tests to score you need, from preparation advice to a breakdown of the test parts, what to expect on test day and everything in between. You will find resources to help you prepare for both the Academic and General Training tests.
+            </p>
+            <p>
+                Stay tuned for the latest tips and advice to achieve success in the language test exam and choose the best university to study abroad.
             </p>
         </div>
-        <div>
-            <img src="./Assets/Images/Shortlist-Universities-and-apply-300x250.png" alt="Shortlist">
+    </div>
+
+    <div class="blogCardsContainer">
+        <div class="card">
+            <div>
+            <img src="./Assets/Images/BestUK_Scholarships.jpeg" width="100%" alt="ImageHolder">
+
+            </div>
+            <div>
+                <h3>BEST UK Scholarships For Indian Students And How To Apply Them</h3>
+                <p>The United Kingdom is one of the most popular places for Indian students seeking higher education overseas. Aside from being home to some of the world’s most prominent educational institutions,</p>
+                <a href="http://">READ MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+            <img src="./Assets/Images/BestUK_Scholarships.jpeg" width="100%" alt="ImageHolder">
+
+            </div>
+            <div>
+                <h3>BEST UK Scholarships For Indian Students And How To Apply Them</h3>
+                <p>The United Kingdom is one of the most popular places for Indian students seeking higher education overseas. Aside from being home to some of the world’s most prominent educational institutions,</p>
+                <a href="http://">READ MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+            <img src="./Assets/Images/BestUK_Scholarships.jpeg" width="100%" alt="ImageHolder">
+
+            </div>
+            <div>
+                <h3>BEST UK Scholarships For Indian Students And How To Apply Them</h3>
+                <p>The United Kingdom is one of the most popular places for Indian students seeking higher education overseas. Aside from being home to some of the world’s most prominent educational institutions,</p>
+                <a href="http://">READ MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+            <img src="./Assets/Images/BestUK_Scholarships.jpeg" width="100%" alt="ImageHolder">
+
+            </div>
+            <div>
+                <h3>BEST UK Scholarships For Indian Students And How To Apply Them</h3>
+                <p>The United Kingdom is one of the most popular places for Indian students seeking higher education overseas. Aside from being home to some of the world’s most prominent educational institutions,</p>
+                <a href="http://">READ MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+            <img src="./Assets/Images/BestUK_Scholarships.jpeg" width="100%" alt="ImageHolder">
+
+            </div>
+            <div>
+                <h3>BEST UK Scholarships For Indian Students And How To Apply Them</h3>
+                <p>The United Kingdom is one of the most popular places for Indian students seeking higher education overseas. Aside from being home to some of the world’s most prominent educational institutions,</p>
+                <a href="http://">READ MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+            <img src="./Assets/Images/BestUK_Scholarships.jpeg" width="100%" alt="ImageHolder">
+
+            </div>
+            <div>
+                <h3>BEST UK Scholarships For Indian Students And How To Apply Them</h3>
+                <p>The United Kingdom is one of the most popular places for Indian students seeking higher education overseas. Aside from being home to some of the world’s most prominent educational institutions,</p>
+                <a href="http://">READ MORE</a>
+            </div>
         </div>
 
     </div>
@@ -48,4 +110,40 @@
     <footer-component></footer-component>
 </body>
     <script src="./footer-component.js" type="module"></script>
+
+    <style>
+        .blogCardsContainer{
+            background-color: grey;
+            padding:2rem 10%;
+            /* padding:1rem; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:1.5rem;
+        }
+
+        .blogCardsContainer .card{
+            background-color: white;
+            min-height: 100px;
+            border-radius: 1rem;
+            display: grid;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card div:last-child{
+            padding:2rem 2rem 0rem 2rem;
+        }
+
+        @media (max-width:1024px){
+            .blogCardsContainer{
+            grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width:768px){
+            .blogCardsContainer{
+            grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
 </html>
