@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <!-- <header-component></header-component> -->
 
     <div class="default-section first">
@@ -28,8 +27,115 @@
         </p>
     </div>
 
-    <div class="default-section">
+    <div class="def_sec">
         <!-- list of collapsable items with details in it -->
+        <div class="howItWorksContent">
+            <div class="titleLid">
+                IELTS/PTE Training
+                <span class="svgArrowup"></span>
+            </div>
+            <ul class="titleInner">
+                <li>
+                    Your journey to start abroad starts with qualifying for an International English language test, i.e. IELTS/PTE. But due to hectic schedules, attending offline classes is not feasible for everyone.
+                </li>
+                <li>
+                    So, we have crafted an online IELTS/PTE Training schedule where we provide training in all four modules, i.e. reading, writing, speaking, and listening within your comfort zone.
+                </li>
+            </ul>
+        </div>
+        <div  class="howItWorksContent">
+            <div class="titleLid">
+                Assistance In The Selection Of Course
+                <span class="svgArrowup"></span>
+            </div>
+            <ul class="titleInner">
+                <li>
+                    Once you qualify for an international English language test, the next step is to select a course.
+                </li>
+                <li>
+                    One of the significant confusion faced by the majority of the experience is whether to choose a diploma or a degree. To provide a solution to this issue, our team will analyse your past score, finances, career expectations, short term and long term goals, etc. Finally, they will shortlist a few courses only for you.
+                </li>
+                <li>
+                    Remember, even if you are clear about the subjects that you have to pursue yet, there are various other crucial factors that you should consider beforehand before selecting a course. As everyone can't make rational choices of their own, here comes an expert's role like us.
+                </li>
+            </ul>
+        </div>
+        <div  class="howItWorksContent">
+            <div class="titleLid">
+                University Enrollments
+                <span class="svgArrowup"></span>
+            </div>
+            <ul class="titleInner">
+                <li>
+                    After selecting the course, we will help you choose the university to which you should apply to achieve your career goals.
+                </li>
+                <li>
+                    We have the updated and latest technology and softwares that aid you to shortlist the right mix of universities complementary to your requirements.
+                </li>
+            </ul>
+        </div>
+        <div  class="howItWorksContent">
+            <div class="titleLid">
+                SOP Writing
+                <span class="svgArrowup"></span>
+            </div>
+            <ul class="titleInner">
+                <li>
+                    To get your application accepted on the first go, you need a definitive statement of purpose.
+                </li>
+                <li>
+                    Usually, aspirants fail to write the perfect SOP as they are not aware of its purpose and format, due to which their application gets rejected.
+                </li>
+                <li>
+                    So, to assist you, we have a team of editorial experts who will craft a statement of purpose as per your needs, requirements, aspirations, and course.
+                </li>
+            </ul>
+        </div>
+        <div  class="howItWorksContent">
+            <div class="titleLid">
+                Letter Of Recommendations
+                <span class="svgArrowup"></span>
+            </div>
+            <ul class="titleInner">
+                <li>
+                    The most reliable way to make your profile more credible and outstanding is to add some Letters of recommendation.
+                </li>
+                <li>
+                    So, at this step, our team helps you get some useful LORs from your past references that suit your profile and increase your chances of getting admitted into the desired university.
+                </li>
+                <li>
+                    Also, these LORs help you to get a job in a foreign land with much ease.
+                </li>
+            </ul>
+        </div>
+        <div  class="howItWorksContent">
+            <div class="titleLid">
+                Interview Preparation
+                <span class="svgArrowup"></span>
+            </div>
+            <ul class="titleInner">
+                <li>
+                    Once you get your offer letter from the desired university, the next step is to clear the interview. Although interviews at the university are easy to crack, still many aspirants fail at this stage due to nervousness, lack of confidence, and poor communication skills.
+                </li>
+                <li>
+                    To avoid this risk, our team will train you for the interviews. You will even have some mock interviews to overcome your nervousness. We understand how crucial this stage is, so unlike other consultants, we have a proper procedure to train you for the final hurdle.
+                </li>
+            </ul>
+        </div>
+        <div  class="howItWorksContent">
+            <div class="titleLid">
+                Post Admission Assitance
+                <span class="svgArrowup"></span>
+            </div>
+            <ul class="titleInner">
+                <li>
+                    Our job is not finished once you get into your dream university. We aim at making long-lasting relationships. So, AskMeAbroad provides you with assistance in educational loans, accommodations, visa consultancy, etc.
+                </li>
+                <li>
+                    In short, we are always there for you till you safely reach and get adjusted to your dream university.
+                </li>
+            </ul>
+        </div>
 
     </div>
 
@@ -53,5 +159,68 @@
 </script> -->
 
 <script src="./index.js"></script>
+<script src="./how-it-works.js"></script>
+<style>
+    .titleLid{
+        background-color: purple;
+        padding: 1rem;
+        color:white;
+        cursor:pointer;
+        position: relative;
+    }
 
+    span.svgArrowup{
+        right:1rem;
+        float: right;
+        min-width:2rem;
+        padding:8px;
+        height: 2rem;
+        transform: translateY(-25%);
+        transition: all 500ms;
+        border-radius: 50px;
+        background-color: white;
+        border:.1rem solid purple;
+        outline: .2rem dashed rgba(255, 192, 203, 0);
+    }
+
+    span.svgArrowup::after{
+        content:url(./Assets/Images/caretRight.svg);
+        top:0;
+        right:0;
+        z-index:4;
+        color:white;
+    }
+
+    span.svgArrowup.active{
+        border:.1rem solid purple;
+        outline: .2rem dashed pink;
+        transform: translateY(-25%) rotate(90deg);
+    }
+
+    .titleInner{
+        padding:0rem 1rem;
+        height:0px;
+        overflow: hidden;
+        transition: all 500ms;
+    }
+
+    .titleInner.active{
+        padding: 1rem;
+        height:200px;
+    }
+
+    .titleInner li{
+        padding-bottom:1rem;
+    }
+
+    .def_sec{
+        margin:0 auto;
+    }
+
+    .howItWorksContent{
+        width: 80%;
+        margin:0 auto;
+        margin-bottom:.5rem;
+    }
+</style>
 </html>
