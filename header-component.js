@@ -147,16 +147,17 @@ class HeaderComponent extends HTMLElement{
             </div>
         </div>
     </div>
-    `
+    `;
     }
 
-    // // Method to update the veryFirstText content
-    // updateHeroText(heroFirstTexts) {
-    //     const heroFirstText = this.querySelector('#heroFirstText');
-    //     if (heroFirstText) {
-    //         heroFirstText.innerHTML = heroFirstTexts;
-    //     }
-    // }
+    // Method to update the veryFirstText content
+     updateHeaderText(newText) {
+        const heroFirstText = this.querySelector('#heroFirstText');
+        if (heroFirstText) {
+            console.log(`Here we are`);
+            heroFirstText.innerHTML = newText;
+        }
+    }
 }
 
 customElements.define('header-component', HeaderComponent);

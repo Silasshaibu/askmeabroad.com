@@ -18,6 +18,7 @@
 <body>
 
     <header-component></header-component>
+
     <div class="default-section first">
         <h2>
             <span class="accent">How it works </span>
@@ -39,10 +40,16 @@
 <script src="./footer-component.js" type="module"></script>
 
 <script>
-    // Access the custom element
-    const headerComponent = document.querySelector('header-component');
-    // Call the method to update the paragraph content
-    headerComponent.updateHeroText('HOW IT WORKS');
+
+    function updateHeaderText(){
+        // Access the custom element
+        const headerComponent = document.querySelector('header-component');
+        // Call the method to update the paragraph content
+        headerComponent.updateHeaderText('HOW IT WORKS');
+    }
+
+    updateHeaderText(`Hello Hello Hello`)
+
 </script>
 
 <script src="./index.js"></script>
