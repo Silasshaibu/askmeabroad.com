@@ -129,17 +129,19 @@
         }
 
         .blogCardsContainer .card{
-            background-color: white;
             min-height: 100px;
             border-radius: 1rem;
             display: grid;
+            grid-template-rows: 1fr;
+            overflow: hidden;
+            align-items: baseline;
             text-align: center;
             border:1px solid #efefef;
         }
 
         .card div:last-child{
-            display: flex;
-            flex-direction:column;
+            display: grid;
+            grid-template-rows: auto;
         }
 
 
