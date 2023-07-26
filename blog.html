@@ -101,8 +101,7 @@
         </div>
         <div class="card">
             <div>
-            <img src="./Assets/Images/Top_scholarship_exams.jpeg" width="100%" alt="ImageHolder">
-
+                <img src="./Assets/Images/Top_scholarship_exams.jpeg" width="100%" alt="ImageHolder">
             </div>
             <div>
                 <h3>Top Scholarship Exams To Study Abroad: Including USA, UK, Canada, And Australia</h3>
@@ -114,6 +113,7 @@
 
     </div>
 
+    <div class="default-center"><button class="primary special">Load More</button></div>
     <footer-component></footer-component>
 </body>
     <script src="./footer-component.js" type="module"></script>
@@ -121,43 +121,55 @@
     <style>
         .blogCardsContainer{
             padding:1rem 10%;
-            /* padding:1rem; */
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             row-gap:2.5rem;
             column-gap: 2rem;
         }
 
+        .default-center{
+            padding:2% 10%;
+            margin:0 auto;display: grid;
+            place-items: center;
+        }
+
         .blogCardsContainer .card{
-            min-height: 100px;
             border-radius: 1rem;
             display: grid;
-            grid-template-rows: 1fr;
+            gap:0px;
+            margin:0;
+            padding:0;
+            flex-direction: column;
             overflow: hidden;
-            align-items: baseline;
-            text-align: center;
             border:1px solid #efefef;
+
         }
 
         .card div:last-child{
             display: grid;
-            grid-template-rows: auto;
+            grid-template-rows: 5rem;
+            min-height: 300px;
+            text-align: center;
+            padding-top:2rem;
+        }
+
+        .card div:last-child *:not(:last-child){
+            padding:1rem 1.5rem;
         }
 
 
-
-        .card div:last-child *:not(p:last-child){
-            margin:1rem 2rem;
-        }
-
-        .card div:last-child p{
-            padding:1rem 0;
-            margin-top:2rem;
+        .card p:nth-child(2){
+            min-height: 10rem;
+            height: auto;
         }
 
         .card div:last-child p:last-child{
+            padding:1rem;
             border-top:1px solid black;
         }
+
+
+
 
         @media (max-width:1024px){
             .blogCardsContainer{
