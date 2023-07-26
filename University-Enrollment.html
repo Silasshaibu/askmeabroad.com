@@ -13,12 +13,13 @@
     <div class="premiumCards-MainTitle"><h2>Pick your Premium</h2></div>
     <div class="premiumCards-Section">
         <div class="card">
-            <div>
+            <div class="package">
             <h1>Basic</h1>
             <p>Make it to your university you're eyeing for</p>
-            <p class="price"><span class="currencySymbol">R</span>14,999</p>
+            <p class="price">14,999</p>
             </div>
-            <div>
+
+            <div class="benefit">
                 <li>Apply Up to 5 University</li>
                 <li>University Documents Checklist</li>
                 <li>Dedicated Mentor</li>
@@ -27,18 +28,18 @@
                 <li>Resume Analysis</li>
                 <li>Scholarship Assistance</li>
             </div>
-            <div>
+            <div class="purchasePackageSection">
                 <button class="primary special">Apply Now</button>
             </div>
         </div>
 
         <div class="card">
-            <div>
+            <div class="package">
             <h1>Essential</h1>
             <p>Make it to your university you're eyeing for</p>
-            <p class="price"><span class="currencySymbol">R</span>19,999</p>
+            <p class="price"><span>19,999</span></p>
             </div>
-            <div>
+            <div class="benefit">
                 <li>Apply Up to 10 University</li>
                 <li>University Documents Checklist</li>
                 <li>1 Personal Dedicated Mentor</li>
@@ -51,7 +52,7 @@
                 <li>Housing and Roommate Connect</li>
                 <li>Advanced Visa/Interview Sessions</li>
             </div>
-            <div>
+            <div class="purchasePackageSection">
                 <button class="primary special">Apply Now</button>
             </div>
         </div>
@@ -221,6 +222,35 @@
         padding: 2rem;
     }
 
+    .package h1, p.price{
+        font-weight: 300;
+    }
+
+    .package :nth-child(2){
+        padding-bottom: 1.5rem;
+    }
+
+    :root{
+        --priceCurrencySpacing:1.1rem;
+    }
+
+    p.price{
+        color:purple;
+        font-size: 3rem;
+        position: relative;
+        margin-left:var(--priceCurrencySpacing);
+    }
+
+
+
+    p.price::before{
+        content: '$';
+        position: absolute;
+        top:5px;
+        font-size: 1.5rem;
+        left:calc(var(--priceCurrencySpacing) * (-1));
+    }
+
     .FAQs h2{
         text-align: center;
         color:white;
@@ -230,7 +260,20 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
-    .FAQs.twoWay, .premiumCards-Section{
+    .card .package{
+        padding:2rem;
+        border-bottom:2px solid #efefef;
+    }
+
+    .card .benefit, .purchasePackageSection{
+        padding:1rem 2rem 2rem 2rem;
+    }
+
+    .benefit li{
+        line-height: 2rem;
+    }
+
+    .FAQs.twoWay{
         display: grid;
         column-gap:1rem;
         padding-top: 0;
@@ -238,13 +281,22 @@
 
     }
 
-    .premiumCards-Section, .premiumCards-MainTitle{
+    .premiumCards-MainTitle{
         padding:2rem 10%;
+    }
+
+    .premiumCards-Section{
+        display: grid;
+        column-gap:1rem;
+        padding:1rem 10%;
+        padding-bottom: 5rem;
+
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .premiumCards-Section .card{
         border:1px solid #efefef;
-        padding:2rem;
+        /* padding:2rem; */
         border-radius: .5rem;
     }
 
