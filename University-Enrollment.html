@@ -288,10 +288,15 @@
     }
 
     @media (max-width:768px){
-        .FAQs.twoWay{
+        .FAQs.twoWay, .premiumCards-Section{
         column-gap:0rem;
-        padding-top: 0;
+        padding-top: 0rem;
         grid-template-columns: repeat(1, 1fr);
-    }
+        }
+
+        .premiumCards-Section{
+            row-gap:1rem;
+        }
+
     }
 </style>
