@@ -241,8 +241,6 @@
         margin-left:var(--priceCurrencySpacing);
     }
 
-
-
     p.price::before{
         content: '$';
         position: absolute;
@@ -278,7 +276,6 @@
         column-gap:1rem;
         padding-top: 0;
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     .premiumCards-MainTitle{
@@ -290,19 +287,16 @@
         column-gap:1rem;
         padding:1rem 10%;
         padding-bottom: 5rem;
-
         grid-template-columns: repeat(2, 1fr);
     }
 
     .premiumCards-Section .card{
         border:1px solid #efefef;
-        /* padding:2rem; */
         border-radius: .5rem;
     }
 
     .premiumCards-MainTitle{
         padding:2rem 10%;
-        border: 1px solid black;
         text-align: center;
     }
 
@@ -363,6 +357,12 @@
         margin-bottom:.5rem;
     }
 
+    @media (max-width:1024px){
+        .premiumCards-Section{
+        padding:0 5%;
+        }
+    }
+
     @media (max-width:768px){
         .FAQs.twoWay, .premiumCards-Section{
         column-gap:0rem;
@@ -373,6 +373,5 @@
         .premiumCards-Section{
             row-gap:1rem;
         }
-
     }
 </style>
