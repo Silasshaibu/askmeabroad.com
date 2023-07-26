@@ -258,6 +258,10 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
+    .benefit li{
+        list-style-image: url(./Assets/Images/close.svg);
+        /*Replace this list style image with a check mark circled svg icon*/
+    }
     .card .package{
         padding:2rem;
         border-bottom:2px solid #efefef;
@@ -265,6 +269,16 @@
 
     .card .benefit, .purchasePackageSection{
         padding:1rem 2rem 2rem 2rem;
+    }
+
+
+    .benefit{
+        height: 400px;
+    }
+
+    .package:first-child .benefit{
+        min-height: 200px;
+        background-color: red;
     }
 
     .benefit li{
@@ -373,5 +387,9 @@
         .premiumCards-Section{
             row-gap:1rem;
         }
+
+        .benefit{
+        height: fit-content;
+    }
     }
 </style>
