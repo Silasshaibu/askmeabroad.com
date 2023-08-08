@@ -22,6 +22,9 @@
         outline:4px solid rgba(196, 7, 196, 0.384);
     }
 
+    :root{
+        --purple1:#8913c6;
+    }
 
     .whatsappchatBoxPopUp div{
         padding:30px;
@@ -31,7 +34,7 @@
     }
 
     .whatsappchatBoxPopUp div:nth-child(1){
-        background-color: #8913c6;
+        background-color: var(--purple1);
         border-radius:40px 40px 0px 0px;
     }
 
@@ -149,7 +152,7 @@
         color:white;
         padding:15px 30px;
         border-radius:25px;
-        background-color: #8913c6;
+        background-color: var(--purple1);
         width:18ch;
         cursor:pointer;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -168,7 +171,7 @@
         height: 25px;
         background-image: url(./Assets/Images/robot-chat.svg);
         background-size: 2.5rem;
-        background-color: #8913c6;
+        background-color: var(--purple1);
     }
 
     .robotChat, .whatsapp{
@@ -184,6 +187,7 @@
 
     .whatsapp{
         border:2px solid #128C7E;
+        background-color: var(--purple1);
         outline:1px solid rgba(255, 255, 255, 0.158);
         background-size:2rem;
         background-image: url(./Assets/Images/whatsappWhiteTrans.svg.svg);
@@ -235,4 +239,13 @@
         position: absolute;
         border-radius: 0% 20% 0% 20%;
         z-index:2;
+    }
+
+    /*Smaller Mobile Devices*/
+    @media (max-width:480px){
+        /*Hide Robot Chat with on smaller mobile devices so as to preserve the user interface*/
+        .robotContainer-All{
+            display:none;
+        }
+        /*Perhpas replace it with scroll to top button*/
     }

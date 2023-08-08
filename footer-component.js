@@ -133,7 +133,7 @@ class FooterComponent extends HTMLElement{
                         </a>
                     </li>
                 </ul>
-                <p>All Right Reserved. Copyright ©<span id="currentYear"></span> Askmeabroad.</p>
+                <p class="allrightreserved">All Right Reserved. Copyright ©<span id="currentYear"></span> Askmeabroad.</p>
             </div>
         </div>
     </footer>

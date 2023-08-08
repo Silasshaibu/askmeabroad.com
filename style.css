@@ -552,18 +552,27 @@ h3.accent,
     flex-direction: column;
 }
 
+
+.howItWorks.Intro h2 {
+    font-size: 1.5rem;
+}
+
+
 .howItWorks.Intro h1 {
-    font-size: 2.5rem;
-    padding: 2rem auto;
+    font-size: 1.5rem;
+    margin-top:5rem;
 }
 
 .count {
     font-size: 2.75rem;
 }
 
-.achieved,
-.howItWorks.Intro p {
+.achieved{
     font-size: 1.5rem;
+}
+
+.howItWorks.Intro p {
+
 }
 
 .step {
@@ -591,9 +600,9 @@ h3.accent,
     display: none;
 }
 
-.howItWorks.Intro p {
+/* .howItWorks.Intro p {
     padding: 2rem;
-}
+} */
 
 button {
     font-size: 1rem;
@@ -608,8 +617,9 @@ button {
     margin: 0 auto;
     padding: 2rem;
     display: grid;
-    grid-template-columns: auto 15ch;
-    gap: 1rem;
+    grid-template-columns: auto 18ch;
+    column-gap: 1.5rem;
+    row-gap:1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     align-items: center;
 }
@@ -714,7 +724,7 @@ footer {
     height:var(--FooterAdvertHeight);
     left: 50%;
     padding:3rem 5%;
-    min-height:350px;
+    min-height:325px;
     transform: translate(-50%, -10vh);
     color: black;
     background-color: white;
@@ -753,6 +763,10 @@ footer {
 .socialLinks-with-copyrights ul {
     display: flex;
     padding-bottom: 20px;
+}
+
+.foot-layer2 .allrightreserved{
+    text-align: center !important;
 }
 
 .foot-layer2 li svg {
@@ -1426,4 +1440,4 @@ button:hover {
     .heroSection{
         min-height: 88vh;
     }
-}
+
