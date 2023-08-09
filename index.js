@@ -1,43 +1,3 @@
-function openWhatsappChatBox(){
-  const whatsappChatIcon = document.getElementById('whatsappIcon');
-  const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
-  whatsappPopUpChatBox.style.display ='grid';
-}
-
-//Closing the whatsappPopUpChat with the whatsapp Close btn
-function exitWhatsappChatBox(){
-  const whatsappChatIcon = document.getElementById('whatsappIcon');
-  const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
-  whatsappPopUpChatBox.style.display ='none';
-}
-
-//Closing the RobotCallout with the X btn closest to it
-function closeBtnRobotCallOut(){
-  const robotCallout = document.querySelector('.robotCallout');
-  const robotCallOutExitBtn = document.querySelector('.closeBtnRobotCallOut');
-  robotCallout.style.display='none';
-}
-
-const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
-const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
-const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
-
-//Always remove the mobileMenuBoard When  The WindowWidth is greater than 600px
-function updateMobileMenuDisplay() {
-  const mobileMenuBoard = document.querySelector(".mobileMenuBoard");
-  const windowWidth = window.innerWidth;
-  //Checks if windows screen is greater than 768
-  if (windowWidth > 768) {
-    mobileMenuBoard.style.display = "none";
-  }
-}
-// Call the function on initial page load
-updateMobileMenuDisplay();
-
-// Call the function whenever the window is resized
-window.addEventListener("resize", updateMobileMenuDisplay);
-
-
 //Putting Carret Right Arrows and Nav or Ul that has nested list
 const menuItems = document.querySelectorAll('.menu-item');
 menuItems.forEach((menuItem) => {
@@ -73,9 +33,7 @@ menuItems.forEach((menuItem) => {
     }
   });
 
-function redirectToWhatsappAPI(){
-    var popupWindow = window.open( "https://api.whatsapp.com/send/?phone=918053064652&text=I+have+a+few+questions%2C+Can+you+help%3F", "WhatsappConnectPopUp", "width=600, height=400");
-}
+
 
 const lists = document.querySelectorAll('.hasNestedList');
 lists.forEach((list)=>{
@@ -92,6 +50,7 @@ lists.forEach((list)=>{
 });
 
 
+
 //Mobile Button Close, Open, MobileMenuBoard actions
 mobileMenuOpenBtn.addEventListener('click', ()=>{
   mobileMenuBoard.style.display ='block';
@@ -100,6 +59,52 @@ mobileMenuOpenBtn.addEventListener('click', ()=>{
 mobileMenuCloseBtn.addEventListener('click', ()=>{
   mobileMenuBoard.style.display ='none';
 });
+
+
+
+function openWhatsappChatBox(){
+  const whatsappChatIcon = document.getElementById('whatsappIcon');
+  const whatsappPopUpChatBox = document.getElementById('whatsappchatBoxPopUp');
+  whatsappPopUpChatBox.style.display ='grid';
+
+  const whatsappcloseBtn = document.getElementById('exitWhatsappBox');
+  whatsappcloseBtn.addEventListener('click', ()=>{
+    whatsappPopUpChatBox.style.display ='none';
+  })
+}
+
+function redirectToWhatsappAPI(){
+  let popupWindow = window.open( "https://api.whatsapp.com/send/?phone=918053064652&text=I+have+a+few+questions%2C+Can+you+help%3F", "WhatsappConnectPopUp", "width=600, height=400");
+}
+
+
+//Closing the RobotCallout with the X btn closest to it
+function closeBtnRobotCallOut(){
+  const robotCallout = document.querySelector('.robotCallout');
+  const robotCallOutExitBtn = document.querySelector('.closeBtnRobotCallOut');
+  robotCallout.style.display='none';
+}
+
+const mobileMenuOpenBtn = document.getElementById('hamburgerMobileMenu');
+const mobileMenuBoard = document.querySelector('.mobileMenuBoard');
+const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
+
+//Always remove the mobileMenuBoard When  The WindowWidth is greater than 600px
+function updateMobileMenuDisplay() {
+  const mobileMenuBoard = document.querySelector(".mobileMenuBoard");
+  const windowWidth = window.innerWidth;
+  //Checks if windows screen is greater than 768
+  if (windowWidth > 768) {
+    mobileMenuBoard.style.display = "none";
+  }
+}
+// Call the function on initial page load
+updateMobileMenuDisplay();
+
+// Call the function whenever the window is resized
+window.addEventListener("resize", updateMobileMenuDisplay);
+
+
 
 
 
