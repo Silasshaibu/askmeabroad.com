@@ -333,7 +333,6 @@
             <div class="step">
                 <div class="icon"></div>
                 <h3 class="accent">Shortlist Universities and apply</h3>
-
             </div>
             <div class="step">
                 <div class="icon"></div>
@@ -445,9 +444,27 @@
         </div>
     </div>
 
+    <footer>
+        <p id="footer-text">Original Footer Text</p>
+      </footer>
+
     <footer-component></footer-component>
 </body>
 
-    <script src="index.js"></script>
-    <script src="./footer-component.js" type="module"></script>
+<script src="index.js"></script>
+<script src="footer-component.js" type="module"></script>
+
+<!--Importing modules for reUse and modifying supported text for module-->
+    <script type="module">
+        import { updateFooterText } from './footer-component.js';
+        document.addEventListener("DOMContentLoaded", function () {
+            updateFooterText("Updeated Footere Text");
+        });
+    </script>
+
+<!--other or defaul js for this page (standalone)-->
+    <script>
+        console.log('there After');
+        //
+    </script>
 </html>

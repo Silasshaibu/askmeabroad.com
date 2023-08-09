@@ -11,7 +11,7 @@ class FooterComponent extends HTMLElement{
                 </p>
             </div>
             <div>
-                <button class="primary">Contact Us</button>
+                <button id="priceCHeck" class="primary">Contact Us</button>
             </div>
 
         </div>
@@ -192,6 +192,16 @@ customElements.define('footer-component', FooterComponent);
   updateCopyrightYear();
 
 
-//Opening the whatsappPopUpChat with the whatsapp Close btn
+
+//exporting function for reUse in some future places
+export function updateFooterText(newText) {
+    const footerTextElement = document.getElementById('priceCHeck');
+    if (footerTextElement) {
+        footerTextElement.textContent = newText;
+    }
+}
+
+
+
 
 
