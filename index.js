@@ -51,14 +51,6 @@ lists.forEach((list)=>{
 
 
 
-//Mobile Button Close, Open, MobileMenuBoard actions
-mobileMenuOpenBtn.addEventListener('click', ()=>{
-  mobileMenuBoard.style.display ='block';
-});
-
-mobileMenuCloseBtn.addEventListener('click', ()=>{
-  mobileMenuBoard.style.display ='none';
-});
 
 
 
@@ -105,6 +97,14 @@ updateMobileMenuDisplay();
 window.addEventListener("resize", updateMobileMenuDisplay);
 
 
+//Mobile Button Close, Open, MobileMenuBoard actions
+mobileMenuOpenBtn.addEventListener('click', ()=>{
+  mobileMenuBoard.style.display ='block';
+});
+
+mobileMenuCloseBtn.addEventListener('click', ()=>{
+  mobileMenuBoard.style.display ='none';
+});
 
 
 
